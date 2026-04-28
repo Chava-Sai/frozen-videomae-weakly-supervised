@@ -1,6 +1,24 @@
 # ── Data (too large for GitHub) ──────────────────────────────────────────────
 data/
 
+# ── Local-only files (keep locally, not on GitHub) ───────────────────────────
+paper/
+milestone2/
+generate_drawio_dark.py
+generate_drawio_light.py
+generate_figures.py
+generate_workflow.py
+project_workflow.drawio
+project_workflow_dark.drawio
+system_design_light.drawio
+presentation/IVC_Project_Presentation_v5.pptx
+presentation/build_v5.js
+presentation/frames/
+presentation/index.html
+presentation/package.json
+presentation/package-lock.json
+presentation/previews/
+
 # ── Model checkpoints ────────────────────────────────────────────────────────
 *.pt
 *.pth
