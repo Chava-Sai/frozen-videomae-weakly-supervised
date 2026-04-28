@@ -1,0 +1,35 @@
+1) RWF dataset summary
+- total videos evaluated: 400
+- normal count: 200
+- fighting count: 200
+- split used: val
+
+2) Feature extraction summary
+- total extracted: 400
+- total failed: 0
+- segments min/max/mean: 9 / 9 / 9.000000
+- extractor settings matched UCF/XD: frozen_i3d=True segment_length=16 overlap=0 tail_rule=drop
+
+3) Fight-validation metrics
+- precision: 1.000000
+- recall: 0.140000
+- F1: 0.245614
+- auxiliary AUC/AP: 0.862250 / 0.818835
+
+4) Confusion matrix
+- labels: ['normal', 'fighting']
+- matrix: [[200, 0], [172, 28]]
+
+5) Prediction breakdown
+- violent predicted as fighting: 28
+- violent missed: 172
+- normal falsely predicted as fighting: 0
+
+6) Five qualitative examples
+- strong successes (3):
+  - qyRJeYN5_0_5b303d3a52 | gt=normal | pred=normal | fight_score=0.000000 | anomaly_score=0.000000 | note=normal clip correctly not flagged as fighting.
+  - 2qFnVnnZ_0_1b526dca9a | gt=normal | pred=normal | fight_score=0.000000 | anomaly_score=0.000000 | note=normal clip correctly not flagged as fighting.
+  - 8m3onRfr_0_0c5066b3d6 | gt=normal | pred=normal | fight_score=0.000000 | anomaly_score=0.000000 | note=normal clip correctly not flagged as fighting.
+- failures (2):
+  - nVdn1krnTCQ_3_b43aeb65b9 | gt=fighting | pred=normal | fight_score=0.000123 | anomaly_score=0.999998 | note=missed fight; model predicted normal.
+  - TYRFDVD_1110_34aad7c75d | gt=fighting | pred=normal | fight_score=0.000426 | anomaly_score=0.999997 | note=missed fight; model predicted normal.

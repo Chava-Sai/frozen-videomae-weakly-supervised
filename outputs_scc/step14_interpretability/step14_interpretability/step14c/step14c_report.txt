@@ -1,0 +1,28 @@
+1) Extraction summary
+- feature layer used: TRN penultimate representation z (post-encoder, pre-head), anomaly-weighted temporal mean
+- model/checkpoint: step7_boundary | /projectnb/cs585/students/saichava/IVC_Project/outputs/step10_ablations/k1/train/checkpoints/best.pt
+- number of points plotted: 320
+- datasets included: ['rwf_2000', 'shanghaitech', 'ucf_crime', 'xd_violence']
+- sampling rule: up to 80 per dataset; balanced on positive/negative and success/failure; diversity prioritization for UCF/XD labels
+- extraction failures: 0
+
+2) Plot summary
+- dataset-colored t-SNE: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/plots/tsne_by_dataset.png
+- class-colored t-SNE: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/plots/tsne_by_class_label.png
+- success/failure t-SNE: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/plots/tsne_by_success_failure.png
+
+3) Main observations
+- UCF class separation (normal vs positive centroid distance): 12.3381
+- XD positives vs UCF: to normal=16.7935, to nearest violent=7.4791
+- RWF fighting vs UCF: to normal=21.6281, to nearest violent=2.2870
+- ShanghaiTech anomaly vs UCF: to normal=8.6957, to nearest violent=18.8472
+
+4) Quantitative summary
+- silhouette by dataset: 0.033959
+- silhouette by TP/TN/FP/FN: 0.036262
+- FN mean distance to normal centroid: 23.217990
+- TP mean distance to normal centroid: 27.104191
+- FN nearest-normal-centroid fraction: 0.013333
+
+5) Report-ready sentence
+- t-SNE shows external-set false negatives clustering closer to the normal manifold with diffuse feature organization, while cross-dataset positive semantics (especially RWF/ShanghaiTech) drift from UCF violent structure.

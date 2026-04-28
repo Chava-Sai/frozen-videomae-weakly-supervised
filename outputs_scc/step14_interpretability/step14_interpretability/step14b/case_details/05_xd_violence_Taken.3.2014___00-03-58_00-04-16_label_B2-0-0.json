@@ -1,0 +1,74 @@
+{
+  "video_id": "Taken.3.2014__#00-03-58_00-04-16_label_B2-0-0",
+  "dataset": "xd_violence",
+  "split": "test",
+  "gt_label": "shooting",
+  "predicted_label": "normal",
+  "case_group": "failure",
+  "binary_status": "FN",
+  "anomaly_score": 9.22914578094236e-10,
+  "num_segments": 27,
+  "layer_used": 1,
+  "num_heads": 4,
+  "attention_shape": [
+    4,
+    27,
+    27
+  ],
+  "entropy_per_head": [
+    0.989334183045515,
+    0.9969357186900841,
+    0.9791959143444461,
+    0.9962577756366541
+  ],
+  "entropy_mean": 0.9904308979291748,
+  "topk_segment_count": 4,
+  "peak_segment_indices": [
+    5,
+    16,
+    13,
+    25
+  ],
+  "pred_spans": [],
+  "gt_spans": [],
+  "topk_overlap_with_pred": 0.0,
+  "topk_overlap_with_gt": null,
+  "observation": "Failure indicates weak focus on actionable segments (entropy=0.990, pred-overlap=0.00, score=0.0000).",
+  "artifacts": {
+    "plot": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/plots/05_xd_violence_Taken.3.2014___00-03-58_00-04-16_label_B2-0-0.png",
+    "attention_tensor": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/attention_tensors/05_xd_violence_Taken.3.2014___00-03-58_00-04-16_label_B2-0-0.npz"
+  },
+  "sequence": {
+    "anomaly_scores": [
+      4.324002961242357e-12,
+      8.457641705039709e-12,
+      1.3699563402094772e-12,
+      2.8200393409338886e-11,
+      2.825686299529062e-12,
+      3.5381981788873418e-09,
+      2.369068483054626e-12,
+      3.0479611889955294e-12,
+      1.1233463811932687e-11,
+      9.206933826444441e-12,
+      6.471761928444897e-12,
+      2.5982792306589175e-11,
+      1.848365557832743e-11,
+      4.24593901704462e-11,
+      1.6267650421175617e-11,
+      4.339436362327254e-12,
+      7.819492969796116e-11,
+      1.1054239121288667e-12,
+      1.6641868438860286e-11,
+      2.5414859453065652e-11,
+      3.016259117472053e-11,
+      6.979168978848982e-12,
+      5.20081200328093e-12,
+      7.1843594441622916e-12,
+      8.094279586867703e-12,
+      3.280582056008896e-11,
+      3.3788601257189743e-12
+    ],
+    "predicted_event_segments": [],
+    "gt_event_segments": []
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "dataset_eval_summary": {
+    "datasets": {
+      "ucf_crime": {
+        "videos_analyzed": 56,
+        "gt_events": 59,
+        "pred_events_before": 135,
+        "pred_events_after": 91
+      }
+    },
+    "videos_analyzed_total": 56,
+    "gt_events_total": 59,
+    "pred_events_before_total": 135,
+    "pred_events_after_total": 91,
+    "matched_pairs_after_total": 26
+  },
+  "boundary_metrics_after": {
+    "matched_pairs": 26,
+    "gt_events": 59,
+    "pred_events": 91,
+    "unmatched_gt": 33,
+    "unmatched_pred": 65,
+    "mean_tiou": 0.4175924297462563,
+    "median_tiou": 0.39335664335664333,
+    "mean_abs_start_error": 9.692307692307692,
+    "mean_abs_end_error": 14.538461538461538,
+    "signed_start_bias": 0.15384615384615385,
+    "signed_end_bias": -2.230769230769231,
+    "mean_abs_duration_error": 22.153846153846153,
+    "pct_iou_ge_0.3": 0.6923076923076923,
+    "pct_iou_ge_0.5": 0.2692307692307692,
+    "pct_iou_ge_0.7": 0.11538461538461539
+  },
+  "boundary_metrics_before": {
+    "matched_pairs": 29,
+    "gt_events": 59,
+    "pred_events": 135,
+    "unmatched_gt": 30,
+    "unmatched_pred": 106,
+    "mean_tiou": 0.44968589363421685,
+    "median_tiou": 0.4,
+    "mean_abs_start_error": 9.275862068965518,
+    "mean_abs_end_error": 13.96551724137931,
+    "signed_start_bias": 0.034482758620689655,
+    "signed_end_bias": -1.0689655172413792,
+    "mean_abs_duration_error": 20.75862068965517,
+    "pct_iou_ge_0.3": 0.7931034482758621,
+    "pct_iou_ge_0.5": 0.3793103448275862,
+    "pct_iou_ge_0.7": 0.1724137931034483
+  },
+  "boundary_head_effect": {
+    "mean_tiou_delta": -0.03209346388796053,
+    "median_tiou_delta": -0.00664335664335669,
+    "mean_abs_start_error_delta": 0.41644562334217383,
+    "mean_abs_end_error_delta": 0.5729442970822287,
+    "pct_iou_ge_0.3_delta": -0.10079575596816981,
+    "pct_iou_ge_0.5_delta": -0.11007957559681697,
+    "pct_iou_ge_0.7_delta": -0.057029177718832896
+  },
+  "boundary_confidence_analysis": {
+    "mean_bt_near_boundaries": 0.0925121490329761,
+    "mean_bt_away_boundaries": 0.07920169351499935,
+    "bt_exact_boundary_correlation": 0.021261520313561655,
+    "boundary_peak_hit_rate": 0.13559322033898305,
+    "boundary_peak_precision": 0.17796610169491525,
+    "peak_tolerance_segments": 2
+  },
+  "short_vs_long": {
+    "duration_split_segments_median": 18.0,
+    "mean_tiou_short_events": 0.44459022813832255,
+    "mean_tiou_long_events": 0.3807772501207117
+  },
+  "per_dataset_after": {
+    "ucf_crime": {
+      "matched_pairs": 26,
+      "gt_events": 59,
+      "pred_events": 91,
+      "unmatched_gt": 33,
+      "unmatched_pred": 65,
+      "mean_tiou": 0.4175924297462563,
+      "median_tiou": 0.39335664335664333,
+      "mean_abs_start_error": 9.692307692307692,
+      "mean_abs_end_error": 14.538461538461538,
+      "signed_start_bias": 0.15384615384615385,
+      "signed_end_bias": -2.230769230769231,
+      "mean_abs_duration_error": 22.153846153846153,
+      "pct_iou_ge_0.3": 0.6923076923076923,
+      "pct_iou_ge_0.5": 0.2692307692307692,
+      "pct_iou_ge_0.7": 0.11538461538461539
+    }
+  },
+  "artifacts": {
+    "matched_events_csv": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/step14d_matched_events_after.csv",
+    "video_summary_csv": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/step14d_video_summary.csv",
+    "iou_plot": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/plots/iou_distribution_before_after.png",
+    "bias_plot": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/plots/start_end_bias_distribution.png",
+    "boundary_profile_plot": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/plots/boundary_confidence_profile.png",
+    "qualitative_plots": [
+      "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/qualitative/01_good_ucf_crime_Fighting033_x264.png",
+      "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/qualitative/02_good_ucf_crime_Shooting021_x264.png",
+      "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/qualitative/03_bad_ucf_crime_Fighting018_x264.png",
+      "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/qualitative/04_bad_ucf_crime_Shooting002_x264.png",
+      "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/qualitative/05_bad_ucf_crime_Shooting007_x264.png"
+    ],
+    "report_txt": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/step14d_report.txt",
+    "summary_json": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/step14d_summary.json"
+  }
+}

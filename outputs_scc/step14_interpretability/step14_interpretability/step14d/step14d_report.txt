@@ -1,0 +1,41 @@
+1) Dataset/eval summary
+- videos analyzed: 56
+- GT events: 59
+- predicted events (after refine): 91
+- matched pairs (after refine): 26
+
+2) Boundary metrics (after refine)
+- mean tIoU: 0.417592
+- median tIoU: 0.393357
+- % IoU >= 0.3: 0.692308
+- % IoU >= 0.5: 0.269231
+- % IoU >= 0.7: 0.115385
+- mean abs start error: 9.692308
+- mean abs end error: 14.538462
+- signed start bias: 0.153846
+- signed end bias: -2.230769
+
+3) Boundary-confidence analysis
+- mean b_t near boundaries: 0.092512
+- mean b_t away boundaries: 0.079202
+- b_t correlation with exact boundary mask: 0.021262
+- boundary peak hit rate (@±2): 0.135593
+- boundary peak precision (@±2): 0.177966
+
+4) Error breakdown
+- start bias direction: late
+- end bias direction: early
+- short vs long events (mean tIoU): short=0.444590, long=0.380777, split=18.00 segments
+- boundary head effect (mean tIoU delta after-before): -0.032093
+
+5) Artifact list
+- IoU plot: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/plots/iou_distribution_before_after.png
+- bias plot: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/plots/start_end_bias_distribution.png
+- boundary-confidence profile plot: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/plots/boundary_confidence_profile.png
+- qualitative boundary plots: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/qualitative
+- matched events CSV: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/step14d_matched_events_after.csv
+- video summary CSV: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/step14d_video_summary.csv
+- summary JSON: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14d/step14d_summary.json
+
+6) Report-ready sentence
+- Boundary analysis shows mean tIoU=0.418 after refinement with boundary head/refinement is weak or noisy on average, late start bias and early end bias, and boundary confidence weakly aligning with true transitions.

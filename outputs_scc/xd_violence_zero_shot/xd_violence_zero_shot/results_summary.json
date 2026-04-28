@@ -1,0 +1,157 @@
+{
+  "dataset_summary": {
+    "total_videos_evaluated": 799,
+    "normal_count": 299,
+    "violent_count": 500,
+    "overlap_class_counts": {
+      "fighting": 120,
+      "shooting": 84,
+      "explosion": 91,
+      "abuse": 8
+    },
+    "riot_count": 101
+  },
+  "feature_extraction_summary": {
+    "total_extracted": 799,
+    "total_failed": 0,
+    "segment_stats": {
+      "min": 5,
+      "max": 2074,
+      "mean": 182.09261576971215
+    },
+    "extractor_match_confirmation": {
+      "frozen_i3d": true,
+      "segment_length": 16,
+      "overlap": 0,
+      "tail_rule": "drop",
+      "note": "same extractor script/settings family as UCF extraction"
+    }
+  },
+  "zero_shot_metrics": {
+    "video_auc": 0.8357257525083612,
+    "video_ap": 0.8846832500514824,
+    "overlap_macro_f1": 0.3608417110191208,
+    "overlap_weighted_f1": 0.49423954814168586
+  },
+  "overlap_per_class": [
+    {
+      "class_name": "fighting",
+      "precision": 0.5575757575757576,
+      "recall": 0.7666666666666667,
+      "f1": 0.6456140350877193,
+      "support": 120
+    },
+    {
+      "class_name": "shooting",
+      "precision": 0.4,
+      "recall": 0.023809523809523808,
+      "f1": 0.0449438202247191,
+      "support": 84
+    },
+    {
+      "class_name": "explosion",
+      "precision": 0.7701149425287356,
+      "recall": 0.7362637362637363,
+      "f1": 0.7528089887640449,
+      "support": 91
+    },
+    {
+      "class_name": "abuse",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 8
+    }
+  ],
+  "overlap_confusion_matrix": {
+    "labels": [
+      "fighting",
+      "shooting",
+      "explosion",
+      "abuse"
+    ],
+    "matrix": [
+      [
+        92,
+        1,
+        3,
+        24
+      ],
+      [
+        54,
+        2,
+        17,
+        11
+      ],
+      [
+        11,
+        2,
+        67,
+        11
+      ],
+      [
+        8,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "excluded_from_overlap_f1": {
+    "excluded_class": "riot",
+    "excluded_count": 101
+  },
+  "transfer_verdict": {
+    "ucf_reference_auc": 0.9273809523809523,
+    "xd_auc": 0.8357257525083612,
+    "ratio_xd_over_ucf": 0.9011676920500944,
+    "passes_75_percent_rule": true,
+    "strongest_overlap_class": "explosion",
+    "weakest_overlap_class": "abuse"
+  },
+  "qualitative_examples": {
+    "successes": [
+      {
+        "video_id": "v=JfLYNEsrTew__#1_label_G-0-0",
+        "gt_label": "explosion",
+        "predicted_label": "explosion",
+        "binary_anomaly_score": 0.9999852776527405
+      },
+      {
+        "video_id": "v=BQjKQbYgUBA__#1_label_B1-0-0",
+        "gt_label": "fighting",
+        "predicted_label": "fighting",
+        "binary_anomaly_score": 0.9998775720596313
+      },
+      {
+        "video_id": "v=8ewWXhYRUNs__#1_label_B1-0-0",
+        "gt_label": "fighting",
+        "predicted_label": "fighting",
+        "binary_anomaly_score": 0.9998480081558228
+      }
+    ],
+    "failures": [
+      {
+        "video_id": "v=xe4ee56aHSg__#1_label_G-0-0",
+        "gt_label": "explosion",
+        "predicted_label": "abuse",
+        "binary_anomaly_score": 0.9999963641166687
+      },
+      {
+        "video_id": "v=pMtu7fOHdII__#1_label_B1-0-0",
+        "gt_label": "fighting",
+        "predicted_label": "abuse",
+        "binary_anomaly_score": 0.9999474287033081
+      }
+    ]
+  },
+  "decode_settings_used": {
+    "threshold": 0.55,
+    "smooth_window": 1,
+    "min_event_len": 5,
+    "merge_gap": 0,
+    "boundary_radius": 2,
+    "boundary_refine": true,
+    "zero_shot_no_xd_tuning": true
+  }
+}

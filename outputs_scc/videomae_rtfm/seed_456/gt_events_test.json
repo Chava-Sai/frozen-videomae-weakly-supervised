@@ -1,0 +1,356 @@
+[
+  {
+    "video_id": "Fighting003_x264",
+    "class_label": "fighting",
+    "start_segment": 113,
+    "end_segment": 192
+  },
+  {
+    "video_id": "Fighting018_x264",
+    "class_label": "fighting",
+    "start_segment": 5,
+    "end_segment": 26
+  },
+  {
+    "video_id": "Fighting033_x264",
+    "class_label": "fighting",
+    "start_segment": 35,
+    "end_segment": 52
+  },
+  {
+    "video_id": "Fighting042_x264",
+    "class_label": "fighting",
+    "start_segment": 18,
+    "end_segment": 75
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "class_label": "fighting",
+    "start_segment": 12,
+    "end_segment": 114
+  },
+  {
+    "video_id": "Shooting002_x264",
+    "class_label": "shooting",
+    "start_segment": 63,
+    "end_segment": 68
+  },
+  {
+    "video_id": "Shooting004_x264",
+    "class_label": "shooting",
+    "start_segment": 31,
+    "end_segment": 41
+  },
+  {
+    "video_id": "Shooting007_x264",
+    "class_label": "shooting",
+    "start_segment": 2,
+    "end_segment": 10
+  },
+  {
+    "video_id": "Shooting008_x264",
+    "class_label": "shooting",
+    "start_segment": 4,
+    "end_segment": 19
+  },
+  {
+    "video_id": "Shooting010_x264",
+    "class_label": "shooting",
+    "start_segment": 68,
+    "end_segment": 78
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "class_label": "shooting",
+    "start_segment": 92,
+    "end_segment": 109
+  },
+  {
+    "video_id": "Shooting013_x264",
+    "class_label": "shooting",
+    "start_segment": 53,
+    "end_segment": 59
+  },
+  {
+    "video_id": "Shooting015_x264",
+    "class_label": "shooting",
+    "start_segment": 53,
+    "end_segment": 106
+  },
+  {
+    "video_id": "Shooting018_x264",
+    "class_label": "shooting",
+    "start_segment": 19,
+    "end_segment": 30
+  },
+  {
+    "video_id": "Shooting019_x264",
+    "class_label": "shooting",
+    "start_segment": 63,
+    "end_segment": 90
+  },
+  {
+    "video_id": "Shooting021_x264",
+    "class_label": "shooting",
+    "start_segment": 30,
+    "end_segment": 39
+  },
+  {
+    "video_id": "Shooting022_x264",
+    "class_label": "shooting",
+    "start_segment": 178,
+    "end_segment": 206
+  },
+  {
+    "video_id": "Shooting024_x264",
+    "class_label": "shooting",
+    "start_segment": 45,
+    "end_segment": 81
+  },
+  {
+    "video_id": "Shooting026_x264",
+    "class_label": "shooting",
+    "start_segment": 12,
+    "end_segment": 37
+  },
+  {
+    "video_id": "Shooting028_x264",
+    "class_label": "shooting",
+    "start_segment": 17,
+    "end_segment": 34
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "class_label": "shooting",
+    "start_segment": 499,
+    "end_segment": 512
+  },
+  {
+    "video_id": "Shooting033_x264",
+    "class_label": "shooting",
+    "start_segment": 105,
+    "end_segment": 125
+  },
+  {
+    "video_id": "Shooting034_x264",
+    "class_label": "shooting",
+    "start_segment": 60,
+    "end_segment": 65
+  },
+  {
+    "video_id": "Shooting037_x264",
+    "class_label": "shooting",
+    "start_segment": 8,
+    "end_segment": 16
+  },
+  {
+    "video_id": "Shooting043_x264",
+    "class_label": "shooting",
+    "start_segment": 59,
+    "end_segment": 76
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "class_label": "shooting",
+    "start_segment": 250,
+    "end_segment": 264
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "class_label": "shooting",
+    "start_segment": 297,
+    "end_segment": 317
+  },
+  {
+    "video_id": "Shooting047_x264",
+    "class_label": "shooting",
+    "start_segment": 135,
+    "end_segment": 243
+  },
+  {
+    "video_id": "Shooting047_x264",
+    "class_label": "shooting",
+    "start_segment": 303,
+    "end_segment": 412
+  },
+  {
+    "video_id": "Shooting048_x264",
+    "class_label": "shooting",
+    "start_segment": 88,
+    "end_segment": 108
+  },
+  {
+    "video_id": "Explosion002_x264",
+    "class_label": "explosion",
+    "start_segment": 93,
+    "end_segment": 131
+  },
+  {
+    "video_id": "Explosion004_x264",
+    "class_label": "explosion",
+    "start_segment": 4,
+    "end_segment": 14
+  },
+  {
+    "video_id": "Explosion007_x264",
+    "class_label": "explosion",
+    "start_segment": 99,
+    "end_segment": 142
+  },
+  {
+    "video_id": "Explosion008_x264",
+    "class_label": "explosion",
+    "start_segment": 62,
+    "end_segment": 77
+  },
+  {
+    "video_id": "Explosion010_x264",
+    "class_label": "explosion",
+    "start_segment": 17,
+    "end_segment": 67
+  },
+  {
+    "video_id": "Explosion011_x264",
+    "class_label": "explosion",
+    "start_segment": 49,
+    "end_segment": 59
+  },
+  {
+    "video_id": "Explosion013_x264",
+    "class_label": "explosion",
+    "start_segment": 157,
+    "end_segment": 185
+  },
+  {
+    "video_id": "Explosion016_x264",
+    "class_label": "explosion",
+    "start_segment": 11,
+    "end_segment": 28
+  },
+  {
+    "video_id": "Explosion017_x264",
+    "class_label": "explosion",
+    "start_segment": 61,
+    "end_segment": 90
+  },
+  {
+    "video_id": "Explosion020_x264",
+    "class_label": "explosion",
+    "start_segment": 3,
+    "end_segment": 16
+  },
+  {
+    "video_id": "Explosion021_x264",
+    "class_label": "explosion",
+    "start_segment": 8,
+    "end_segment": 16
+  },
+  {
+    "video_id": "Explosion022_x264",
+    "class_label": "explosion",
+    "start_segment": 139,
+    "end_segment": 151
+  },
+  {
+    "video_id": "Explosion025_x264",
+    "class_label": "explosion",
+    "start_segment": 16,
+    "end_segment": 26
+  },
+  {
+    "video_id": "Explosion027_x264",
+    "class_label": "explosion",
+    "start_segment": 6,
+    "end_segment": 11
+  },
+  {
+    "video_id": "Explosion028_x264",
+    "class_label": "explosion",
+    "start_segment": 17,
+    "end_segment": 43
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "class_label": "explosion",
+    "start_segment": 114,
+    "end_segment": 126
+  },
+  {
+    "video_id": "Explosion033_x264",
+    "class_label": "explosion",
+    "start_segment": 60,
+    "end_segment": 84
+  },
+  {
+    "video_id": "Explosion033_x264",
+    "class_label": "explosion",
+    "start_segment": 96,
+    "end_segment": 196
+  },
+  {
+    "video_id": "Explosion035_x264",
+    "class_label": "explosion",
+    "start_segment": 15,
+    "end_segment": 21
+  },
+  {
+    "video_id": "Explosion036_x264",
+    "class_label": "explosion",
+    "start_segment": 121,
+    "end_segment": 129
+  },
+  {
+    "video_id": "Explosion039_x264",
+    "class_label": "explosion",
+    "start_segment": 3,
+    "end_segment": 9
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "class_label": "explosion",
+    "start_segment": 278,
+    "end_segment": 287
+  },
+  {
+    "video_id": "Robbery048_x264",
+    "class_label": "robbery",
+    "start_segment": 28,
+    "end_segment": 58
+  },
+  {
+    "video_id": "Robbery050_x264",
+    "class_label": "robbery",
+    "start_segment": 30,
+    "end_segment": 88
+  },
+  {
+    "video_id": "Robbery102_x264",
+    "class_label": "robbery",
+    "start_segment": 67,
+    "end_segment": 97
+  },
+  {
+    "video_id": "Robbery106_x264",
+    "class_label": "robbery",
+    "start_segment": 30,
+    "end_segment": 37
+  },
+  {
+    "video_id": "Robbery137_x264",
+    "class_label": "robbery",
+    "start_segment": 8,
+    "end_segment": 121
+  },
+  {
+    "video_id": "Abuse028_x264",
+    "class_label": "abuse",
+    "start_segment": 10,
+    "end_segment": 15
+  },
+  {
+    "video_id": "Abuse030_x264",
+    "class_label": "abuse",
+    "start_segment": 79,
+    "end_segment": 85
+  }
+]

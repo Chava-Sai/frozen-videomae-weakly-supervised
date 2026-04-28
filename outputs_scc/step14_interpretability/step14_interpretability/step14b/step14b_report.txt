@@ -1,0 +1,43 @@
+1) Attention extraction summary
+- videos visualized: 10
+- requested cases: 10
+- extraction success for all requested: True
+- model/checkpoint: step7_boundary | /projectnb/cs585/students/saichava/IVC_Project/outputs/step10_ablations/k1/train/checkpoints/best.pt
+- number of heads (unique): [4]
+- layer used (unique): [1]
+- device: cuda
+
+2) Per-case observations
+- qaAclucigpY_3_cbd49589b9 | dataset=rwf_2000 | failure | gt=fighting | pred=normal | anomaly_score=0.000000
+  observation: Fight miss is consistent with under-attention to fight cues: score=0.0000, predicted-overlap=0.00, entropy=0.994.
+- 04_0011 | dataset=shanghaitech | failure | gt=anomaly | pred=normal | anomaly_score=0.000000
+  observation: Failure shows likely domain mismatch: attention is diffuse (entropy=0.995) with weak anomaly activation (score=0.0000).
+- 08_0080 | dataset=shanghaitech | failure | gt=anomaly | pred=normal | anomaly_score=0.000000
+  observation: Failure shows likely domain mismatch: attention is diffuse (entropy=0.997) with weak anomaly activation (score=0.0000).
+- Explosion016_x264 | dataset=ucf_crime | failure | gt=explosion | pred=normal | anomaly_score=0.000000
+  observation: Failure likely from diffuse focus: entropy=0.999, pred-overlap=0.00, gt-overlap=0.12.
+- Taken.3.2014__#00-03-58_00-04-16_label_B2-0-0 | dataset=xd_violence | failure | gt=shooting | pred=normal | anomaly_score=0.000000
+  observation: Failure indicates weak focus on actionable segments (entropy=0.990, pred-overlap=0.00, score=0.0000).
+- qyRJeYN5_0_5b303d3a52 | dataset=rwf_2000 | success | gt=normal | pred=normal | anomaly_score=0.000000
+  observation: Prediction is correct (TN); attention is usable but less concentrated (entropy=0.998). The clip-level score remains low enough for a stable decision.
+- 09_003 | dataset=shanghaitech | success | gt=normal | pred=normal | anomaly_score=0.000000
+  observation: Prediction is correct (TN); attention is usable but less concentrated (entropy=0.998). The clip-level score remains low enough for a stable decision.
+- Normal_Videos_025_x264 | dataset=ucf_crime | success | gt=normal | pred=normal | anomaly_score=0.000000
+  observation: Prediction is correct (TN); attention is usable but less concentrated (entropy=0.999). The clip-level score remains low enough for a stable decision.
+- New.Kids.Turbo.2010__#00-41-30_00-42-05_label_A | dataset=xd_violence | success | gt=normal | pred=normal | anomaly_score=0.000000
+  observation: Prediction is correct (TN); attention is usable but less concentrated (entropy=0.999). The clip-level score remains low enough for a stable decision.
+- v=AqFWYZsOgWY__#00-21-00_00-24-00_label_A | dataset=xd_violence | success | gt=normal | pred=normal | anomaly_score=0.000000
+  observation: Prediction is correct (TN); attention is usable but less concentrated (entropy=0.999). The clip-level score remains low enough for a stable decision.
+
+3) Cross-dataset takeaway
+- UCF attention is more diffuse on selected cases (mean entropy=0.999).
+- XD errors are weak-focus dominant on selected cases (mean pred-overlap=0.000, failure_frac=0.33).
+- RWF failures show under-attention to fight motion (failure_frac=0.50, mean pred-overlap=0.000).
+- ShanghaiTech collapse appears as domain mismatch in attention (failure_frac=0.67, mean entropy=0.997).
+
+4) Artifact list
+- plots_dir: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/plots
+- tensors_dir: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/attention_tensors
+- details_dir: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/case_details
+- summary_json: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/step14b_summary.json
+- per_case_json: /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/step14b_per_case.json

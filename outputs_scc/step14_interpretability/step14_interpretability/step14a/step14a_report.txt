@@ -1,0 +1,42 @@
+1) Error taxonomy counts
+- occlusion: 0
+- camera motion: 7
+- crowd density: 43
+- low light: 155
+- similar normal motion: 267
+- clip-boundary / incomplete event: 1
+- other: 29
+
+2) Ten selected case studies
+- [failure] qaAclucigpY_3_cbd49589b9 | dataset=rwf_2000 | gt=fighting | pred=normal | anomaly_score=0.000000 | type=similar normal motion
+  explanation: Prediction is incorrect (FN); gt=fighting but pred=normal at anomaly score 0.0000. Heuristic failure type is 'similar normal motion', indicating likely domain/visual mismatch.
+- [failure] 04_0011 | dataset=shanghaitech | gt=anomaly | pred=normal | anomaly_score=0.000000 | type=crowd density
+  explanation: Prediction is incorrect (FN); gt=anomaly but pred=normal at anomaly score 0.0000. Heuristic failure type is 'crowd density', indicating likely domain/visual mismatch.
+- [failure] 08_0080 | dataset=shanghaitech | gt=anomaly | pred=normal | anomaly_score=0.000000 | type=crowd density
+  explanation: Prediction is incorrect (FN); gt=anomaly but pred=normal at anomaly score 0.0000. Heuristic failure type is 'crowd density', indicating likely domain/visual mismatch.
+- [failure] Explosion016_x264 | dataset=ucf_crime | gt=explosion | pred=normal | anomaly_score=0.000000 | type=low light
+  explanation: Prediction is incorrect (FN); gt=explosion but pred=normal at anomaly score 0.0000. Heuristic failure type is 'low light', indicating likely domain/visual mismatch.
+- [failure] Taken.3.2014__#00-03-58_00-04-16_label_B2-0-0 | dataset=xd_violence | gt=shooting | pred=normal | anomaly_score=0.000000 | type=low light
+  explanation: Prediction is incorrect (FN); gt=shooting but pred=normal at anomaly score 0.0000. Heuristic failure type is 'low light', indicating likely domain/visual mismatch.
+- [success] qyRJeYN5_0_5b303d3a52 | dataset=rwf_2000 | gt=normal | pred=normal | anomaly_score=0.000000 | type=other
+  explanation: Prediction is correct (TN) with anomaly score 0.0000. This suggests stable transfer behavior for this sample on rwf_2000.
+- [success] 09_003 | dataset=shanghaitech | gt=normal | pred=normal | anomaly_score=0.000000 | type=other
+  explanation: Prediction is correct (TN) with anomaly score 0.0000. This suggests stable transfer behavior for this sample on shanghaitech.
+- [success] Normal_Videos_025_x264 | dataset=ucf_crime | gt=normal | pred=normal | anomaly_score=0.000000 | type=other
+  explanation: Prediction is correct (TN) with anomaly score 0.0000. This suggests stable transfer behavior for this sample on ucf_crime.
+- [success] New.Kids.Turbo.2010__#00-41-30_00-42-05_label_A | dataset=xd_violence | gt=normal | pred=normal | anomaly_score=0.000000 | type=other
+  explanation: Prediction is correct (TN) with anomaly score 0.0000. This suggests stable transfer behavior for this sample on xd_violence.
+- [success] v=AqFWYZsOgWY__#00-21-00_00-24-00_label_A | dataset=xd_violence | gt=normal | pred=normal | anomaly_score=0.000000 | type=other
+  explanation: Prediction is correct (TN) with anomaly score 0.0000. This suggests stable transfer behavior for this sample on xd_violence.
+
+3) Short cross-dataset insight summary
+- ucf_crime: FP=7, FN=15; dominant failure types: low light(9), similar normal motion(6).
+- xd_violence: FP=30, FN=235; dominant failure types: low light(146), similar normal motion(89).
+- rwf_2000: FP=0, FN=172; dominant failure types: similar normal motion(172).
+- shanghaitech: FP=0, FN=43; dominant failure types: crowd density(43).
+- what kinds of errors dominate on UCF: FP=7, FN=15; see taxonomy counts in table.
+- what kinds dominate on XD: FP=30, FN=235; class/scene confusion appears in suggested taxonomy.
+- why RWF fight recall is low: FN-dominant pattern (FP=0, FN=172) consistent with conservative fight mapping.
+- why ShanghaiTech collapses: severe FN dominance (FP=0, FN=43) indicating strong domain-shift mismatch.
+
+Note: taxonomy labels above are heuristic suggestions and should be manually audited for final report figures.

@@ -1,0 +1,184 @@
+%% ============================================================
+%% BU CS585 IVC Course Submission (Final Integrated Version)
+%% Format  : ACL 2023 style (ACL2023 package)
+%% Compiler: pdfLaTeX
+%% ============================================================
+\documentclass[11pt]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[]{ACL2023}
+
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{graphicx}
+
+\setlength\titlebox{9cm}
+
+\title{Weakly-Supervised Surveillance Violence Detection:\\
+Full Pipeline Development, Cross-Dataset Transfer, and Interpretability}
+
+\author{
+  Srinivasa Sai Chava \\
+  Boston University \\
+  Boston, Massachusetts, USA \\
+  \texttt{saichava@bu.edu}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper presents an end-to-end weakly supervised surveillance violence detection project from data preparation through cross-dataset transfer and interpretability. We use frozen segment-level video features and an RTFM-based stack with event classification, temporal refinement (TRN), and a boundary head. On the UCF-Crime violence subset, the final locked model achieves AUC/AP of 0.9274/0.8675 with macro-F1/weighted-F1 of 0.3029/0.7374. Zero-shot transfer to XD-Violence remains strong for binary ranking (AUC/AP 0.8357/0.8847) with partial overlap-class transfer (macro-F1 0.3608). RWF-2000 fight validation shows useful anomaly ranking (AUC/AP 0.8623/0.8188) but weak explicit fight recall (0.1400, F1 0.2456), indicating conservative transfer behavior. ShanghaiTech robustness is negative (AUC/AP 0.3705/0.2165), with false-negative-dominant errors under domain shift. Interpretability analyses (error taxonomy, temporal attention, t-SNE feature structure, and boundary precision) explain this pattern: external failures are dominated by low light, similar normal motion, and crowd density; attention is diffuse on failures; ShanghaiTech is out-of-domain in feature space; and boundary refinement is currently weak/noisy (mean tIoU delta -0.0321).
+\end{abstract}
+
+\section{Introduction}
+Weakly supervised video anomaly detection is attractive for real surveillance because frame-level annotation is expensive. Following the standard UCF-Crime paradigm \citep{sultani2018real,tian2021weakly}, we built a complete project pipeline for violence-focused detection, classification, localization, transfer, and interpretability.
+
+Unlike papers that report only one benchmark metric, this project explicitly validates four dimensions:
+\begin{itemize}
+  \item in-domain performance on UCF-Crime,
+  \item cross-dataset transfer on XD-Violence and RWF-2000,
+  \item robustness failure behavior on ShanghaiTech, and
+  \item mechanistic explanations via interpretability analyses.
+\end{itemize}
+
+\paragraph{Project outcome.}
+The final system is strong in-domain and shows credible binary transfer to XD, partial transfer to RWF, and failure under ShanghaiTech domain shift. This mixed result is scientifically useful because it is supported by consistent quantitative and interpretability evidence.
+
+\section{Method Overview}
+\subsection{Feature and model pipeline}
+Videos are split into 16-frame non-overlapping segments; segment features are pre-extracted and cached. The learnable stack contains:
+\begin{itemize}
+  \item RTFM-style anomaly scorer \citep{tian2021weakly}
+  \item Event classifier head (normal + violence categories)
+  \item TRN temporal refinement module
+  \item Boundary head for boundary confidence and decode-time refinement
+\end{itemize}
+
+\subsection{Locked decoding protocol}
+For fair ablation and transfer comparisons, decoding settings are fixed:
+threshold 0.55, smooth-window 1, min-event-len 5, merge-gap 0,
+boundary-radius 2, boundary-refine enabled.
+
+\subsection{Training/evaluation policy}
+Training remains on UCF-Crime only. XD-Violence, RWF-2000, and ShanghaiTech are evaluation-only (zero-shot, no retraining).
+
+\section{Dataset and Experiment Timeline}
+\subsection{UCF-Crime violence subset}
+We use the 6-category violence setting (normal + fighting, shooting, explosion, robbery, abuse), with 1,300 videos total and 206 test videos.
+
+\subsection{External datasets for transfer scope}
+\begin{itemize}
+  \item XD-Violence: broad transfer check with overlap-class reporting
+  \item RWF-2000: fight-only validation (primary metric: fighting F1)
+  \item ShanghaiTech: binary robustness-only evaluation (AUC/AP)
+\end{itemize}
+
+\subsection{Stepwise development summary}
+\begin{itemize}
+  \item Step 4 baseline: AUC 0.9213, AP 0.8290
+  \item Step 6 TRN iteration: AUC 0.9096, AP 0.8663
+  \item Step 10 final locked model (k=1): chosen for transfer and interpretability
+  \item Steps 11--13: XD, RWF, ShanghaiTech transfer/robustness
+  \item Steps 14A--14E: full interpretability package and final synthesis
+\end{itemize}
+
+\section{Main Quantitative Results}
+\subsection{In-domain UCF (locked final model)}
+From the final Step-10 selected checkpoint:
+\begin{itemize}
+  \item AUC: 0.927381
+  \item AP: 0.867482
+  \item Macro-F1: 0.302860
+  \item Weighted-F1: 0.737390
+  \item mAP@0.3 / 0.5 / 0.7: 0.033624 / 0.012412 / 0.011200
+\end{itemize}
+
+\subsection{Cross-dataset transfer summary}
+\begin{table}[t]
+\centering
+\small
+\caption{Final cross-dataset transfer table (Step 14E synthesis).}
+\label{tab:cross_dataset}
+\begin{tabular}{lcccc}
+\toprule
+Dataset & AUC & AP & Class metric & Notes \\
+\midrule
+UCF-Crime (in-domain) & 0.927381 & 0.867482 & Macro-F1 0.302860 & Loc mAP@0.5 0.012412 \\
+XD-Violence (zero-shot) & 0.835726 & 0.884683 & Overlap macro-F1 0.360842 & XD/UCF ratio 0.901168 \\
+RWF-2000 (fight validation) & 0.862250 & 0.818835 & Fight F1 0.245614 & Precision 1.000000, Recall 0.140000 \\
+ShanghaiTech (robustness) & 0.370528 & 0.216516 & -- & Binary anomaly only \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{XD-Violence.}
+Binary transfer is strong (AUC/AP 0.8357/0.8847), and the transfer ratio to UCF AUC is 0.9012 (passes 75\% criterion). Class transfer is partial and uneven: explosion/fighting are stronger than shooting/abuse.
+
+\paragraph{RWF-2000.}
+Anomaly ranking transfers (AUC/AP 0.8623/0.8188), but explicit fight prediction is conservative (recall 0.1400, F1 0.2456).
+
+\paragraph{ShanghaiTech.}
+Robustness transfer fails (AUC/AP 0.3705/0.2165), with severe false-negative dominance (FP=0, FN=43), indicating strong domain shift.
+
+\section{Interpretability Results (Steps 14A--14D)}
+\subsection{Step 14A: Error taxonomy}
+Across all four datasets, dominant failure categories are:
+\begin{itemize}
+  \item similar normal motion: 267
+  \item low light: 155
+  \item crowd density: 43
+  \item other: 29
+\end{itemize}
+This supports a false-negative-heavy conservative transfer profile.
+
+\subsection{Step 14B: Temporal attention}
+TRN attention extraction succeeded for all selected cases (10/10). Failure cases show diffuse, high-entropy attention with weak overlap to actionable anomaly regions, especially on external datasets.
+
+\subsection{Step 14C: Feature-space structure (t-SNE)}
+Using penultimate TRN embeddings:
+\begin{itemize}
+  \item XD and RWF show partial violent-semantic alignment to UCF clusters.
+  \item ShanghaiTech anomalies are out-of-domain relative to UCF violent structure.
+  \item False negatives are relatively more normal-adjacent than true positives.
+\end{itemize}
+
+\subsection{Step 14D: Boundary precision}
+On UCF temporal boundary analysis:
+\begin{itemize}
+  \item mean tIoU after refine: 0.417592
+  \item start bias: slightly late (+0.153846)
+  \item end bias: early (-2.230769)
+  \item boundary-head mean tIoU delta (after-before): -0.032093
+  \item boundary confidence alignment weak (corr=0.021262)
+\end{itemize}
+Boundary modeling is currently weak/noisy and slightly degrades localization.
+
+\section{Integrated Discussion and Claim Status}
+\subsection{What is supported vs not}
+\paragraph{Supported.}
+XD zero-shot binary transfer is supported (ratio XD/UCF = 0.901168, pass-75=true).
+
+\paragraph{Partially supported.}
+RWF fight validation is partial: anomaly ranking is useful, but fight recall/F1 are low.
+
+\paragraph{Not supported.}
+ShanghaiTech robustness is not supported. Boundary refinement benefit is not supported in current configuration.
+
+\subsection{Final project verdict}
+The project is an overall mixed/partial success: strong in-domain performance and meaningful XD binary transfer, with limited class-level transfer generalization and clear out-of-domain robustness limits.
+
+\section{Conclusion}
+This project delivered a full weakly supervised violence detection pipeline through final synthesis. The model is strong on UCF and retains useful binary transfer to XD, but becomes conservative on RWF and fails under ShanghaiTech domain shift. Interpretability analyses consistently explain these outcomes through diffuse failure attention, partial external feature misalignment, and weak boundary-head utility. These findings provide a complete, reproducible baseline for future work on transfer-aware weak supervision, domain adaptation, and calibration-aware temporal localization.
+
+\paragraph{Future work.}
+Immediate priorities are (1) threshold/calibration strategies that improve external recall without exploding false positives, (2) domain adaptation for crowd-scene anomalies, and (3) redesigning boundary modeling so it contributes positive localization gains.
+
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+\end{document}

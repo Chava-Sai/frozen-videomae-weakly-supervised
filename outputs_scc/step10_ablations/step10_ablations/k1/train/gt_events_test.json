@@ -1,0 +1,474 @@
+[
+  {
+    "video_id": "Fighting003_x264",
+    "class_label": "fighting",
+    "start_segment": 113,
+    "end_segment": 192,
+    "start_frame": 1820,
+    "end_frame": 3103
+  },
+  {
+    "video_id": "Fighting018_x264",
+    "class_label": "fighting",
+    "start_segment": 5,
+    "end_segment": 26,
+    "start_frame": 80,
+    "end_frame": 420
+  },
+  {
+    "video_id": "Fighting033_x264",
+    "class_label": "fighting",
+    "start_segment": 35,
+    "end_segment": 52,
+    "start_frame": 570,
+    "end_frame": 840
+  },
+  {
+    "video_id": "Fighting042_x264",
+    "class_label": "fighting",
+    "start_segment": 18,
+    "end_segment": 75,
+    "start_frame": 290,
+    "end_frame": 1200
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "class_label": "fighting",
+    "start_segment": 12,
+    "end_segment": 114,
+    "start_frame": 200,
+    "end_frame": 1830
+  },
+  {
+    "video_id": "Shooting002_x264",
+    "class_label": "shooting",
+    "start_segment": 63,
+    "end_segment": 68,
+    "start_frame": 1020,
+    "end_frame": 1100
+  },
+  {
+    "video_id": "Shooting004_x264",
+    "class_label": "shooting",
+    "start_segment": 31,
+    "end_segment": 41,
+    "start_frame": 500,
+    "end_frame": 660
+  },
+  {
+    "video_id": "Shooting007_x264",
+    "class_label": "shooting",
+    "start_segment": 2,
+    "end_segment": 10,
+    "start_frame": 45,
+    "end_frame": 165
+  },
+  {
+    "video_id": "Shooting008_x264",
+    "class_label": "shooting",
+    "start_segment": 4,
+    "end_segment": 19,
+    "start_frame": 75,
+    "end_frame": 315
+  },
+  {
+    "video_id": "Shooting010_x264",
+    "class_label": "shooting",
+    "start_segment": 68,
+    "end_segment": 78,
+    "start_frame": 1095,
+    "end_frame": 1260
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "class_label": "shooting",
+    "start_segment": 92,
+    "end_segment": 109,
+    "start_frame": 1480,
+    "end_frame": 1750
+  },
+  {
+    "video_id": "Shooting013_x264",
+    "class_label": "shooting",
+    "start_segment": 53,
+    "end_segment": 59,
+    "start_frame": 860,
+    "end_frame": 945
+  },
+  {
+    "video_id": "Shooting015_x264",
+    "class_label": "shooting",
+    "start_segment": 53,
+    "end_segment": 106,
+    "start_frame": 855,
+    "end_frame": 1715
+  },
+  {
+    "video_id": "Shooting018_x264",
+    "class_label": "shooting",
+    "start_segment": 19,
+    "end_segment": 30,
+    "start_frame": 315,
+    "end_frame": 480
+  },
+  {
+    "video_id": "Shooting019_x264",
+    "class_label": "shooting",
+    "start_segment": 63,
+    "end_segment": 90,
+    "start_frame": 1020,
+    "end_frame": 1455
+  },
+  {
+    "video_id": "Shooting021_x264",
+    "class_label": "shooting",
+    "start_segment": 30,
+    "end_segment": 39,
+    "start_frame": 480,
+    "end_frame": 630
+  },
+  {
+    "video_id": "Shooting022_x264",
+    "class_label": "shooting",
+    "start_segment": 178,
+    "end_segment": 206,
+    "start_frame": 2850,
+    "end_frame": 3300
+  },
+  {
+    "video_id": "Shooting024_x264",
+    "class_label": "shooting",
+    "start_segment": 45,
+    "end_segment": 81,
+    "start_frame": 720,
+    "end_frame": 1305
+  },
+  {
+    "video_id": "Shooting026_x264",
+    "class_label": "shooting",
+    "start_segment": 12,
+    "end_segment": 37,
+    "start_frame": 195,
+    "end_frame": 600
+  },
+  {
+    "video_id": "Shooting028_x264",
+    "class_label": "shooting",
+    "start_segment": 17,
+    "end_segment": 34,
+    "start_frame": 285,
+    "end_frame": 555
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "class_label": "shooting",
+    "start_segment": 499,
+    "end_segment": 512,
+    "start_frame": 7995,
+    "end_frame": 8205
+  },
+  {
+    "video_id": "Shooting033_x264",
+    "class_label": "shooting",
+    "start_segment": 105,
+    "end_segment": 125,
+    "start_frame": 1680,
+    "end_frame": 2000
+  },
+  {
+    "video_id": "Shooting034_x264",
+    "class_label": "shooting",
+    "start_segment": 60,
+    "end_segment": 65,
+    "start_frame": 960,
+    "end_frame": 1050
+  },
+  {
+    "video_id": "Shooting037_x264",
+    "class_label": "shooting",
+    "start_segment": 8,
+    "end_segment": 16,
+    "start_frame": 140,
+    "end_frame": 260
+  },
+  {
+    "video_id": "Shooting043_x264",
+    "class_label": "shooting",
+    "start_segment": 59,
+    "end_segment": 76,
+    "start_frame": 945,
+    "end_frame": 1230
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "class_label": "shooting",
+    "start_segment": 250,
+    "end_segment": 264,
+    "start_frame": 4005,
+    "end_frame": 4230
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "class_label": "shooting",
+    "start_segment": 297,
+    "end_segment": 317,
+    "start_frame": 4760,
+    "end_frame": 5088
+  },
+  {
+    "video_id": "Shooting047_x264",
+    "class_label": "shooting",
+    "start_segment": 135,
+    "end_segment": 243,
+    "start_frame": 2160,
+    "end_frame": 3900
+  },
+  {
+    "video_id": "Shooting047_x264",
+    "class_label": "shooting",
+    "start_segment": 303,
+    "end_segment": 412,
+    "start_frame": 4860,
+    "end_frame": 6600
+  },
+  {
+    "video_id": "Shooting048_x264",
+    "class_label": "shooting",
+    "start_segment": 88,
+    "end_segment": 108,
+    "start_frame": 1410,
+    "end_frame": 1730
+  },
+  {
+    "video_id": "Explosion002_x264",
+    "class_label": "explosion",
+    "start_segment": 93,
+    "end_segment": 131,
+    "start_frame": 1500,
+    "end_frame": 2100
+  },
+  {
+    "video_id": "Explosion004_x264",
+    "class_label": "explosion",
+    "start_segment": 4,
+    "end_segment": 14,
+    "start_frame": 75,
+    "end_frame": 225
+  },
+  {
+    "video_id": "Explosion007_x264",
+    "class_label": "explosion",
+    "start_segment": 99,
+    "end_segment": 142,
+    "start_frame": 1590,
+    "end_frame": 2280
+  },
+  {
+    "video_id": "Explosion008_x264",
+    "class_label": "explosion",
+    "start_segment": 62,
+    "end_segment": 77,
+    "start_frame": 1005,
+    "end_frame": 1245
+  },
+  {
+    "video_id": "Explosion010_x264",
+    "class_label": "explosion",
+    "start_segment": 17,
+    "end_segment": 67,
+    "start_frame": 285,
+    "end_frame": 1080
+  },
+  {
+    "video_id": "Explosion011_x264",
+    "class_label": "explosion",
+    "start_segment": 49,
+    "end_segment": 59,
+    "start_frame": 795,
+    "end_frame": 945
+  },
+  {
+    "video_id": "Explosion013_x264",
+    "class_label": "explosion",
+    "start_segment": 157,
+    "end_segment": 185,
+    "start_frame": 2520,
+    "end_frame": 2970
+  },
+  {
+    "video_id": "Explosion016_x264",
+    "class_label": "explosion",
+    "start_segment": 11,
+    "end_segment": 28,
+    "start_frame": 180,
+    "end_frame": 450
+  },
+  {
+    "video_id": "Explosion017_x264",
+    "class_label": "explosion",
+    "start_segment": 61,
+    "end_segment": 90,
+    "start_frame": 990,
+    "end_frame": 1440
+  },
+  {
+    "video_id": "Explosion020_x264",
+    "class_label": "explosion",
+    "start_segment": 3,
+    "end_segment": 16,
+    "start_frame": 60,
+    "end_frame": 270
+  },
+  {
+    "video_id": "Explosion021_x264",
+    "class_label": "explosion",
+    "start_segment": 8,
+    "end_segment": 16,
+    "start_frame": 135,
+    "end_frame": 270
+  },
+  {
+    "video_id": "Explosion022_x264",
+    "class_label": "explosion",
+    "start_segment": 139,
+    "end_segment": 151,
+    "start_frame": 2230,
+    "end_frame": 2420
+  },
+  {
+    "video_id": "Explosion025_x264",
+    "class_label": "explosion",
+    "start_segment": 16,
+    "end_segment": 26,
+    "start_frame": 260,
+    "end_frame": 420
+  },
+  {
+    "video_id": "Explosion027_x264",
+    "class_label": "explosion",
+    "start_segment": 6,
+    "end_segment": 11,
+    "start_frame": 105,
+    "end_frame": 180
+  },
+  {
+    "video_id": "Explosion028_x264",
+    "class_label": "explosion",
+    "start_segment": 17,
+    "end_segment": 43,
+    "start_frame": 280,
+    "end_frame": 700
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "class_label": "explosion",
+    "start_segment": 114,
+    "end_segment": 126,
+    "start_frame": 1830,
+    "end_frame": 2020
+  },
+  {
+    "video_id": "Explosion033_x264",
+    "class_label": "explosion",
+    "start_segment": 60,
+    "end_segment": 84,
+    "start_frame": 970,
+    "end_frame": 1350
+  },
+  {
+    "video_id": "Explosion033_x264",
+    "class_label": "explosion",
+    "start_segment": 96,
+    "end_segment": 196,
+    "start_frame": 1550,
+    "end_frame": 3156
+  },
+  {
+    "video_id": "Explosion035_x264",
+    "class_label": "explosion",
+    "start_segment": 15,
+    "end_segment": 21,
+    "start_frame": 250,
+    "end_frame": 350
+  },
+  {
+    "video_id": "Explosion036_x264",
+    "class_label": "explosion",
+    "start_segment": 121,
+    "end_segment": 129,
+    "start_frame": 1950,
+    "end_frame": 2070
+  },
+  {
+    "video_id": "Explosion039_x264",
+    "class_label": "explosion",
+    "start_segment": 3,
+    "end_segment": 9,
+    "start_frame": 60,
+    "end_frame": 150
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "class_label": "explosion",
+    "start_segment": 278,
+    "end_segment": 287,
+    "start_frame": 4460,
+    "end_frame": 4600
+  },
+  {
+    "video_id": "Robbery048_x264",
+    "class_label": "robbery",
+    "start_segment": 28,
+    "end_segment": 58,
+    "start_frame": 450,
+    "end_frame": 930
+  },
+  {
+    "video_id": "Robbery050_x264",
+    "class_label": "robbery",
+    "start_segment": 30,
+    "end_segment": 88,
+    "start_frame": 495,
+    "end_frame": 1410
+  },
+  {
+    "video_id": "Robbery102_x264",
+    "class_label": "robbery",
+    "start_segment": 67,
+    "end_segment": 97,
+    "start_frame": 1080,
+    "end_frame": 1560
+  },
+  {
+    "video_id": "Robbery106_x264",
+    "class_label": "robbery",
+    "start_segment": 30,
+    "end_segment": 37,
+    "start_frame": 480,
+    "end_frame": 600
+  },
+  {
+    "video_id": "Robbery137_x264",
+    "class_label": "robbery",
+    "start_segment": 8,
+    "end_segment": 121,
+    "start_frame": 135,
+    "end_frame": 1950
+  },
+  {
+    "video_id": "Abuse028_x264",
+    "class_label": "abuse",
+    "start_segment": 10,
+    "end_segment": 15,
+    "start_frame": 165,
+    "end_frame": 240
+  },
+  {
+    "video_id": "Abuse030_x264",
+    "class_label": "abuse",
+    "start_segment": 79,
+    "end_segment": 85,
+    "start_frame": 1275,
+    "end_frame": 1360
+  }
+]

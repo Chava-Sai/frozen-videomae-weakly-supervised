@@ -1,0 +1,107 @@
+{
+  "dataset_summary": {
+    "total_videos_evaluated": 400,
+    "normal_count": 200,
+    "fighting_count": 200,
+    "split_used": "val",
+    "dataset": "rwf_2000"
+  },
+  "feature_extraction_summary": {
+    "total_extracted": 400,
+    "total_failed": 0,
+    "segment_stats": {
+      "min": 9,
+      "max": 9,
+      "mean": 9.0
+    },
+    "extractor_match_confirmation": {
+      "frozen_i3d": true,
+      "segment_length": 16,
+      "overlap": 0,
+      "tail_rule": "drop"
+    }
+  },
+  "fight_validation_metrics": {
+    "precision": 1.0,
+    "recall": 0.14,
+    "f1": 0.24561403508771928,
+    "aux_binary_auc": 0.8622500000000001,
+    "aux_binary_ap": 0.8188352467320219
+  },
+  "confusion_matrix": {
+    "labels": [
+      "normal",
+      "fighting"
+    ],
+    "matrix": [
+      [
+        200,
+        0
+      ],
+      [
+        172,
+        28
+      ]
+    ]
+  },
+  "prediction_breakdown": {
+    "violent_predicted_as_fighting": 28,
+    "violent_missed": 172,
+    "normal_false_predicted_as_fighting": 0
+  },
+  "qualitative_examples": {
+    "successes": [
+      {
+        "video_id": "qyRJeYN5_0_5b303d3a52",
+        "gt_label": "normal",
+        "predicted_label": "normal",
+        "fight_score": 1.0263421574810106e-12,
+        "anomaly_score": 7.39023165580166e-12,
+        "note": "normal clip correctly not flagged as fighting."
+      },
+      {
+        "video_id": "2qFnVnnZ_0_1b526dca9a",
+        "gt_label": "normal",
+        "predicted_label": "normal",
+        "fight_score": 1.533368255381757e-12,
+        "anomaly_score": 1.2068848524726672e-11,
+        "note": "normal clip correctly not flagged as fighting."
+      },
+      {
+        "video_id": "8m3onRfr_0_0c5066b3d6",
+        "gt_label": "normal",
+        "predicted_label": "normal",
+        "fight_score": 1.062282052445419e-11,
+        "anomaly_score": 3.039324694698031e-11,
+        "note": "normal clip correctly not flagged as fighting."
+      }
+    ],
+    "failures": [
+      {
+        "video_id": "nVdn1krnTCQ_3_b43aeb65b9",
+        "gt_label": "fighting",
+        "predicted_label": "normal",
+        "fight_score": 0.0001233886497987109,
+        "anomaly_score": 0.9999977946281433,
+        "note": "missed fight; model predicted normal."
+      },
+      {
+        "video_id": "TYRFDVD_1110_34aad7c75d",
+        "gt_label": "fighting",
+        "predicted_label": "normal",
+        "fight_score": 0.00042619445382533264,
+        "anomaly_score": 0.9999974966049194,
+        "note": "missed fight; model predicted normal."
+      }
+    ]
+  },
+  "decode_settings_used": {
+    "threshold": 0.55,
+    "smooth_window": 1,
+    "min_event_len": 5,
+    "merge_gap": 0,
+    "boundary_radius": 2,
+    "boundary_refine": true,
+    "zero_shot_no_rwf_tuning": true
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "video_id": "09_003",
+  "dataset": "shanghaitech",
+  "split": "test",
+  "gt_label": "normal",
+  "predicted_label": "normal",
+  "case_group": "success",
+  "binary_status": "TN",
+  "anomaly_score": 7.084664799261731e-11,
+  "num_segments": 32,
+  "layer_used": 1,
+  "num_heads": 4,
+  "attention_shape": [
+    4,
+    32,
+    32
+  ],
+  "entropy_per_head": [
+    0.9986910535621668,
+    0.998112780797796,
+    0.9966403685736008,
+    0.9987696971675579
+  ],
+  "entropy_mean": 0.9980534750252803,
+  "topk_segment_count": 4,
+  "peak_segment_indices": [
+    9,
+    0,
+    31,
+    17
+  ],
+  "pred_spans": [],
+  "gt_spans": [],
+  "topk_overlap_with_pred": 0.0,
+  "topk_overlap_with_gt": null,
+  "observation": "Prediction is correct (TN); attention is usable but less concentrated (entropy=0.998). The clip-level score remains low enough for a stable decision.",
+  "artifacts": {
+    "plot": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/plots/07_shanghaitech_09_003.png",
+    "attention_tensor": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/attention_tensors/07_shanghaitech_09_003.npz"
+  },
+  "sequence": {
+    "anomaly_scores": [
+      7.418656661206668e-11,
+      2.7002322253166788e-11,
+      2.8001972268709707e-11,
+      5.058688537507017e-11,
+      4.5114585678351915e-11,
+      4.496339064963273e-11,
+      5.381711049023963e-11,
+      5.346709533449179e-11,
+      3.253252181534272e-11,
+      7.795412926281386e-11,
+      2.225365378083488e-11,
+      1.776830418909192e-11,
+      9.790230258432953e-12,
+      8.968714659829402e-12,
+      3.315247382174036e-11,
+      4.0013933139126934e-11,
+      2.1480631509640524e-11,
+      6.546353736869293e-11,
+      2.4833229222975817e-11,
+      2.40351037683606e-11,
+      1.918977823867074e-11,
+      2.7533267332735534e-11,
+      1.619186902612757e-11,
+      1.812099775788667e-11,
+      1.8645049046361883e-11,
+      3.4110964053368775e-11,
+      4.84962556224211e-11,
+      6.183180356611473e-11,
+      2.7232953739297905e-11,
+      4.771689293692205e-11,
+      5.56317804323303e-11,
+      6.578233791021404e-11
+    ],
+    "predicted_event_segments": [],
+    "gt_event_segments": []
+  }
+}

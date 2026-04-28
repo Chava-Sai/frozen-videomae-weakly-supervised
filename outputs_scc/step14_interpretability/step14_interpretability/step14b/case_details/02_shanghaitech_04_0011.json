@@ -1,0 +1,65 @@
+{
+  "video_id": "04_0011",
+  "dataset": "shanghaitech",
+  "split": "test",
+  "gt_label": "anomaly",
+  "predicted_label": "normal",
+  "case_group": "failure",
+  "binary_status": "FN",
+  "anomaly_score": 2.2761825757555698e-10,
+  "num_segments": 19,
+  "layer_used": 1,
+  "num_heads": 4,
+  "attention_shape": [
+    4,
+    19,
+    19
+  ],
+  "entropy_per_head": [
+    0.9969937985477838,
+    0.9992447342813071,
+    0.9908163849337761,
+    0.993367981124326
+  ],
+  "entropy_mean": 0.9951057247217983,
+  "topk_segment_count": 3,
+  "peak_segment_indices": [
+    3,
+    0,
+    8
+  ],
+  "pred_spans": [],
+  "gt_spans": [],
+  "topk_overlap_with_pred": 0.0,
+  "topk_overlap_with_gt": null,
+  "observation": "Failure shows likely domain mismatch: attention is diffuse (entropy=0.995) with weak anomaly activation (score=0.0000).",
+  "artifacts": {
+    "plot": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/plots/02_shanghaitech_04_0011.png",
+    "attention_tensor": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/attention_tensors/02_shanghaitech_04_0011.npz"
+  },
+  "sequence": {
+    "anomaly_scores": [
+      2.2046231507033553e-10,
+      1.8243462296396729e-10,
+      1.4788779922891848e-10,
+      2.7981755801320674e-10,
+      1.8211686325653176e-10,
+      1.1707169955688101e-10,
+      1.1069652139372721e-10,
+      1.3354052585956566e-10,
+      1.8257489964312867e-10,
+      1.6540359359940027e-10,
+      1.0084878765415084e-10,
+      1.4084930444191457e-10,
+      6.987843637062952e-11,
+      2.0762043126398844e-11,
+      1.3518959389446916e-11,
+      1.981169568676666e-11,
+      1.9925193439629396e-11,
+      6.934534890756794e-11,
+      2.9651951033438095e-11
+    ],
+    "predicted_event_segments": [],
+    "gt_event_segments": []
+  }
+}

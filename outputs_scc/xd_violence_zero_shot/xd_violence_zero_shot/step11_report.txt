@@ -1,0 +1,43 @@
+1) XD dataset summary
+- total videos evaluated: 799
+- normal count: 299
+- violent count: 500
+- overlap-class counts: fighting=120, shooting=84, explosion=91, abuse=8
+- riot count: 101
+
+2) Feature extraction summary
+- total extracted: 799
+- total failed: 0
+- segments min/max/mean: 5 / 2074 / 182.092616
+- extractor settings matched UCF: frozen_i3d=True segment_length=16 overlap=0 tail_rule=drop
+
+3) Zero-shot metrics
+- AUC: 0.835726
+- AP: 0.884683
+- 4-class macro-F1: 0.360842
+- 4-class weighted-F1: 0.494240
+
+4) Per-class overlap results
+- fighting: precision=0.557576 recall=0.766667 f1=0.645614
+- shooting: precision=0.400000 recall=0.023810 f1=0.044944
+- explosion: precision=0.770115 recall=0.736264 f1=0.752809
+- abuse: precision=0.000000 recall=0.000000 f1=0.000000
+
+5) Confusion matrix (overlap classes only)
+- labels: ['fighting', 'shooting', 'explosion', 'abuse']
+- matrix: [[92, 1, 3, 24], [54, 2, 17, 11], [11, 2, 67, 11], [8, 0, 0, 0]]
+- riot videos excluded from overlap F1: 101 (class=riot)
+
+6) Transfer verdict
+- XD AUC / UCF AUC: 0.835726 / 0.927381 (ratio=0.901168)
+- meets 75% rule: True
+- strongest overlap class: explosion, weakest overlap class: abuse
+
+7) Five qualitative examples
+- strong successes (3):
+  - v=JfLYNEsrTew__#1_label_G-0-0 | gt=explosion | pred=explosion | anomaly_score=0.999985
+  - v=BQjKQbYgUBA__#1_label_B1-0-0 | gt=fighting | pred=fighting | anomaly_score=0.999878
+  - v=8ewWXhYRUNs__#1_label_B1-0-0 | gt=fighting | pred=fighting | anomaly_score=0.999848
+- failures (2):
+  - v=xe4ee56aHSg__#1_label_G-0-0 | gt=explosion | pred=abuse | anomaly_score=0.999996
+  - v=pMtu7fOHdII__#1_label_B1-0-0 | gt=fighting | pred=abuse | anomaly_score=0.999947

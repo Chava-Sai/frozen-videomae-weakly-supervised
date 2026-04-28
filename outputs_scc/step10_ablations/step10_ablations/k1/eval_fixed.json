@@ -1,0 +1,186 @@
+{
+  "model_kind": "step7_boundary",
+  "checkpoint": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step10_ablations/k1/train/checkpoints/best.pt",
+  "split": "test",
+  "decode_settings": {
+    "threshold": 0.55,
+    "smooth_window": 1,
+    "min_event_len": 5,
+    "merge_gap": 0,
+    "boundary_radius": 2,
+    "boundary_refine_requested": true,
+    "model_has_boundary_head": true
+  },
+  "metrics": {
+    "binary": {
+      "auc": 0.9273809523809523,
+      "ap": 0.8674817368694084,
+      "f1": 0.7884615384615384,
+      "confusion_matrix_threshold": 0.55,
+      "confusion_matrix": [
+        [
+          143,
+          7
+        ],
+        [
+          15,
+          41
+        ]
+      ]
+    },
+    "classification": {
+      "macro_f1": 0.30286008959844085,
+      "weighted_f1": 0.7373899661716762,
+      "confusion_matrix": [
+        [
+          148,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          9,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        [
+          9,
+          3,
+          0,
+          6,
+          1,
+          2
+        ],
+        [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_names": [
+        "normal",
+        "fighting",
+        "shooting",
+        "explosion",
+        "robbery",
+        "abuse"
+      ],
+      "per_class": [
+        {
+          "class_name": "normal",
+          "precision": 0.8505747126436781,
+          "recall": 0.9866666666666667,
+          "f1": 0.9135802469135802,
+          "support": 150
+        },
+        {
+          "class_name": "fighting",
+          "precision": 0.2222222222222222,
+          "recall": 0.4,
+          "f1": 0.2857142857142857,
+          "support": 5
+        },
+        {
+          "class_name": "shooting",
+          "precision": 1.0,
+          "recall": 0.13043478260869565,
+          "f1": 0.23076923076923078,
+          "support": 23
+        },
+        {
+          "class_name": "explosion",
+          "precision": 0.6,
+          "recall": 0.2857142857142857,
+          "f1": 0.3870967741935484,
+          "support": 21
+        },
+        {
+          "class_name": "robbery",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        {
+          "class_name": "abuse",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        }
+      ]
+    }
+  },
+  "temporal_localization": {
+    "tiou": {
+      "0.3": {
+        "mAP": 0.033624242424242425,
+        "per_class_ap": {
+          "fighting": 0.020000000000000004,
+          "shooting": 0.036000000000000004,
+          "explosion": 0.11212121212121212,
+          "robbery": 0.0,
+          "abuse": 0.0
+        }
+      },
+      "0.5": {
+        "mAP": 0.012412121212121213,
+        "per_class_ap": {
+          "fighting": 0.020000000000000004,
+          "shooting": 0.036000000000000004,
+          "explosion": 0.006060606060606061,
+          "robbery": 0.0,
+          "abuse": 0.0
+        }
+      },
+      "0.7": {
+        "mAP": 0.011200000000000002,
+        "per_class_ap": {
+          "fighting": 0.020000000000000004,
+          "shooting": 0.036000000000000004,
+          "explosion": 0.0,
+          "robbery": 0.0,
+          "abuse": 0.0
+        }
+      }
+    },
+    "gt_event_count": 59,
+    "pred_event_count": 93,
+    "classes": [
+      "fighting",
+      "shooting",
+      "explosion",
+      "robbery",
+      "abuse"
+    ]
+  },
+  "mAP@0.3": 0.033624242424242425,
+  "mAP@0.5": 0.012412121212121213,
+  "mAP@0.7": 0.011200000000000002,
+  "pred_event_count": 93,
+  "gt_event_count": 59
+}

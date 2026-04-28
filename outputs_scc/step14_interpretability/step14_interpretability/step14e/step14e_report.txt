@@ -1,0 +1,29 @@
+1) Final cross-dataset table
+| Dataset | Scope | AUC | AP | Macro-F1 | Weighted-F1 | Loc mAP@0.5 | Notes |
+|---|---|---:|---:|---:|---:|---:|---|
+| UCF-Crime (primary) | train/test in-domain | 0.927381 | 0.867482 | 0.302860 | 0.737390 | 0.012412 | mAP@0.3=0.033624, mAP@0.7=0.011200 |
+| XD-Violence (Step11) | zero-shot transfer | 0.835726 | 0.884683 | 0.360842 | 0.494240 | NA | 4-class overlap F1 (fighting/shooting/explosion/abuse) |
+| RWF-2000 (Step12) | fight validation (zero-shot) | 0.862250 | 0.818835 | 0.245614 | NA | NA | fight precision=1.000000, recall=0.140000, F1=0.245614 |
+| ShanghaiTech (Step13) | binary robustness (zero-shot) | 0.370528 | 0.216516 | NA | NA | NA | binary anomaly only |
+
+2) Transfer conclusions
+- XD: XD-Violence shows strong binary transfer with AUC/AP=0.835726 / 0.884683 and transfer ratio XD/UCF=0.901168. Overlap-class transfer is partial (macro-F1=0.360842), with stronger classes like explosion and weaker classes like abuse, consistent with uneven class semantics across datasets.
+- RWF: RWF-2000 fight validation shows weak explicit fight transfer at precision/recall/F1=1.000000 / 0.140000 / 0.245614, while auxiliary anomaly ranking remains useful (AUC/AP=0.862250 / 0.818835). This pattern supports conservative decoding behavior as a key bottleneck rather than total feature collapse.
+- ShanghaiTech: ShanghaiTech robustness is negative with AUC/AP=0.370528 / 0.216516 and severe false-negative dominance (FP=0, FN=43). This indicates strong out-of-domain shift where a violence-trained representation does not generalize to broader crowd-centric anomaly patterns.
+
+3) Integrated interpretability conclusion (14A-14D)
+- Step 14A shows external errors dominated by similar normal motion(267), low light(155), crowd density(43), other(29). Step 14B indicates diffuse/high-entropy attention on failure cases, with weak focus on actionable segments under domain shift. Step 14C shows partial XD/RWF semantic alignment but clear ShanghaiTech out-of-domain drift; false negatives are relatively more normal-adjacent than true positives. Step 14D finds boundary refinement currently weak/noisy (mean tIoU delta=-0.032093) with weak boundary-confidence alignment (corr=0.021262).
+
+4) Final failure taxonomy summary
+- External transfer failures are primarily associated with low light, similar normal motion, crowd density/domain shift, and conservative positive prediction behavior that drives false-negative-heavy outcomes.
+
+5) Final project verdict
+- overall: mixed
+- supported: XD zero-shot binary transfer supported (ratio XD/UCF=0.901168, pass_75=True).
+- partially supported: RWF partially supported: ranking signal transfers (AUC=0.862250) but fight recall/F1 remain weak (recall=0.140000, F1=0.245614).
+- not supported: ShanghaiTech robustness not supported (AUC=0.370528, AP=0.216516).
+- not supported: Boundary refinement benefit not supported (mean tIoU delta=-0.032093).
+- summary: Project succeeded overall on core objectives: strong in-domain performance and meaningful zero-shot XD binary transfer, with partial support for fight-specific transfer on RWF and non-support for ShanghaiTech robustness. Interpretability goals are supported and provide a coherent explanation of where transfer fails and why.
+
+6) Report-ready abstract-style paragraph
+- We developed and evaluated a weakly supervised violence-detection system based on RTFM with classifier, TRN temporal modeling, and boundary-aware decoding under a fixed UCF-trained protocol. On UCF-Crime, the final model maintained strong in-domain detection and localization behavior relative to earlier baselines. In zero-shot XD-Violence transfer, binary anomaly ranking remained strong, while overlap-class performance showed uneven semantic transfer across categories. RWF-2000 fight validation showed useful anomaly ranking but weak fight-label recall, indicating conservative decision behavior in external transfer. ShanghaiTech robustness was negative, with false-negative-dominant behavior and poor out-of-domain generalization. Interpretability analyses linked these outcomes to diffuse attention on failure cases, partial cross-dataset feature alignment, and weak boundary-confidence utility. Overall, the system supports strong in-domain and limited cross-dataset transfer claims, while highlighting domain-shift and conservative decoding as primary failure drivers.

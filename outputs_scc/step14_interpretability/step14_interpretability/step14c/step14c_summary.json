@@ -1,0 +1,194 @@
+{
+  "extraction_summary": {
+    "feature_layer_used": "TRN penultimate representation z (post-encoder, pre-head), anomaly-weighted temporal mean",
+    "model_kind": "step7_boundary",
+    "checkpoint": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step10_ablations/k1/train/checkpoints/best.pt",
+    "device": "cuda",
+    "datasets_included": [
+      "rwf_2000",
+      "shanghaitech",
+      "ucf_crime",
+      "xd_violence"
+    ],
+    "num_datasets": 4,
+    "num_points_plotted": 320,
+    "embedding_dim": 512,
+    "sampling_rule": "up to 80 per dataset; balanced on positive/negative and success/failure; diversity prioritization for UCF/XD labels",
+    "sampling_meta": {
+      "ucf_crime": {
+        "available": 206,
+        "selected": 80,
+        "target": 80,
+        "gt_label_counts": {
+          "explosion": 10,
+          "robbery": 5,
+          "abuse": 2,
+          "shooting": 13,
+          "fighting": 5,
+          "normal": 45
+        },
+        "status_counts": {
+          "FN": 15,
+          "TP": 20,
+          "FP": 7,
+          "TN": 38
+        },
+        "binary_counts": {
+          "1": 35,
+          "0": 45
+        }
+      },
+      "xd_violence": {
+        "available": 799,
+        "selected": 80,
+        "target": 80,
+        "gt_label_counts": {
+          "shooting": 8,
+          "fighting": 8,
+          "car_accident": 7,
+          "riot": 7,
+          "explosion": 7,
+          "abuse": 3,
+          "normal": 40
+        },
+        "status_counts": {
+          "FN": 20,
+          "TP": 20,
+          "FP": 20,
+          "TN": 20
+        },
+        "binary_counts": {
+          "1": 40,
+          "0": 40
+        }
+      },
+      "rwf_2000": {
+        "available": 400,
+        "selected": 80,
+        "target": 80,
+        "gt_label_counts": {
+          "fighting": 40,
+          "normal": 40
+        },
+        "status_counts": {
+          "FN": 20,
+          "TP": 20,
+          "TN": 40
+        },
+        "binary_counts": {
+          "1": 40,
+          "0": 40
+        }
+      },
+      "shanghaitech": {
+        "available": 199,
+        "selected": 80,
+        "target": 80,
+        "gt_label_counts": {
+          "anomaly": 21,
+          "normal": 59
+        },
+        "status_counts": {
+          "FN": 20,
+          "TP": 1,
+          "TN": 59
+        },
+        "binary_counts": {
+          "1": 21,
+          "0": 59
+        }
+      }
+    },
+    "extraction_failures": []
+  },
+  "plots": {
+    "by_dataset": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/plots/tsne_by_dataset.png",
+    "by_class_label": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/plots/tsne_by_class_label.png",
+    "by_success_failure": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/plots/tsne_by_success_failure.png"
+  },
+  "quantitative": {
+    "intra_dataset_mean_distance": {
+      "ucf_crime": 22.067578321409165,
+      "xd_violence": 20.54047660250196,
+      "rwf_2000": 22.800005338938533,
+      "shanghaitech": 16.167411607384935
+    },
+    "dataset_to_ucf_centroid_distance": {
+      "ucf_crime": 0.0,
+      "xd_violence": 10.537158614035631,
+      "rwf_2000": 8.597958250435573,
+      "shanghaitech": 15.452810387513749
+    },
+    "class_centroid_pair_distances": {
+      "abuse__vs__anomaly": 18.847244600172605,
+      "abuse__vs__car_accident": 22.50294257619778,
+      "abuse__vs__explosion": 18.69803114192094,
+      "abuse__vs__fighting": 17.2997233563626,
+      "abuse__vs__normal": 12.327602675008674,
+      "abuse__vs__riot": 19.871332969154714,
+      "abuse__vs__robbery": 14.291608538914193,
+      "abuse__vs__shooting": 11.335606700342574,
+      "anomaly__vs__car_accident": 29.298468738395197,
+      "anomaly__vs__explosion": 25.382036649592916,
+      "anomaly__vs__fighting": 26.259326191543536,
+      "anomaly__vs__normal": 8.695655360008793,
+      "anomaly__vs__riot": 24.368966482900454,
+      "anomaly__vs__robbery": 22.791561736089943,
+      "anomaly__vs__shooting": 23.617444184827967,
+      "car_accident__vs__explosion": 11.037566168593381,
+      "car_accident__vs__fighting": 22.564618980833416,
+      "car_accident__vs__normal": 23.337032427549456,
+      "car_accident__vs__riot": 24.03641981938663,
+      "car_accident__vs__robbery": 21.245708999793763,
+      "car_accident__vs__shooting": 16.07482380711301,
+      "explosion__vs__fighting": 19.473815354531865,
+      "explosion__vs__normal": 18.856645547690214,
+      "explosion__vs__riot": 16.09778276653505,
+      "explosion__vs__robbery": 20.245313614258276,
+      "explosion__vs__shooting": 12.312538746615255,
+      "fighting__vs__normal": 20.436708821564828,
+      "fighting__vs__riot": 17.844208829947252,
+      "fighting__vs__robbery": 17.178663765690427,
+      "fighting__vs__shooting": 12.866716010446815,
+      "normal__vs__riot": 19.119544904249665,
+      "normal__vs__robbery": 16.080539179198894,
+      "normal__vs__shooting": 15.726157339154959,
+      "riot__vs__robbery": 24.040787401605765,
+      "riot__vs__shooting": 15.645749355856031,
+      "robbery__vs__shooting": 11.57240383583034
+    },
+    "ucf_normal_vs_ucf_positive_centroid_distance": 12.338057077097552,
+    "xd_drift": {
+      "xd_positive_to_ucf_normal": 16.793495856299653,
+      "xd_positive_to_nearest_ucf_violent": 7.479054908468974
+    },
+    "rwf_collapse": {
+      "rwf_fight_to_ucf_normal": 21.628126054881687,
+      "rwf_fight_to_nearest_ucf_violent": 2.2869966940108934
+    },
+    "shanghaitech_shift": {
+      "sh_anomaly_to_ucf_normal": 8.695655360008793,
+      "sh_anomaly_to_nearest_ucf_violent": 18.847244600172605
+    },
+    "fn_mean_distance_to_normal_centroid": 23.217990240739574,
+    "tp_mean_distance_to_normal_centroid": 27.104190514053474,
+    "fn_nearest_normal_centroid_fraction": 0.013333333333333334,
+    "silhouette_by_dataset": 0.03395866796910051,
+    "silhouette_by_status": 0.03626181685012525
+  },
+  "observations": {
+    "ucf_class_separation": "separated",
+    "xd_alignment": "partial alignment",
+    "rwf_near_normal": "no_or_partial",
+    "shanghaitech_ood": "yes",
+    "fn_near_normal": "partial_or_no"
+  },
+  "artifacts": {
+    "report_txt": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/step14c_report.txt",
+    "summary_json": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/step14c_summary.json",
+    "embeddings_csv": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/step14c_embeddings.csv",
+    "embeddings_npz": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/step14c_embeddings_matrix.npz",
+    "plots_dir": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/plots"
+  },
+  "report_ready_sentence": "t-SNE shows external-set false negatives clustering closer to the normal manifold with diffuse feature organization, while cross-dataset positive semantics (especially RWF/ShanghaiTech) drift from UCF violent structure."
+}

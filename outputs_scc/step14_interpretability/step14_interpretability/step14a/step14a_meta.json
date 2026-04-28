@@ -1,0 +1,18 @@
+{
+  "total_rows": 1604,
+  "total_failures": 502,
+  "datasets_included": [
+    "rwf_2000",
+    "shanghaitech",
+    "ucf_crime",
+    "xd_violence"
+  ],
+  "missing_inputs": [],
+  "outputs": {
+    "error_table_csv": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14a/step14a_error_table.csv",
+    "taxonomy_counts_json": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14a/step14a_taxonomy_counts.json",
+    "case_studies_json": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14a/step14a_case_studies.json",
+    "case_studies_csv": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14a/step14a_case_studies.csv",
+    "report_txt": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14a/step14a_report.txt"
+  }
+}

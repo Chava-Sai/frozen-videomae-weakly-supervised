@@ -1,0 +1,1822 @@
+[
+  {
+    "video_id": "Fighting003_x264",
+    "predicted_class": "robbery",
+    "start_segment": 30,
+    "end_segment": 35,
+    "event_score": 0.7856085312790846
+  },
+  {
+    "video_id": "Fighting003_x264",
+    "predicted_class": "robbery",
+    "start_segment": 42,
+    "end_segment": 70,
+    "event_score": 0.5861414027658398
+  },
+  {
+    "video_id": "Fighting003_x264",
+    "predicted_class": "robbery",
+    "start_segment": 71,
+    "end_segment": 189,
+    "event_score": 0.535668655422139
+  },
+  {
+    "video_id": "Fighting018_x264",
+    "predicted_class": "abuse",
+    "start_segment": 5,
+    "end_segment": 8,
+    "event_score": 0.8991069419994808
+  },
+  {
+    "video_id": "Fighting018_x264",
+    "predicted_class": "abuse",
+    "start_segment": 15,
+    "end_segment": 28,
+    "event_score": 0.8284285710454249
+  },
+  {
+    "video_id": "Fighting033_x264",
+    "predicted_class": "fighting",
+    "start_segment": 3,
+    "end_segment": 65,
+    "event_score": 0.7457182545027976
+  },
+  {
+    "video_id": "Fighting042_x264",
+    "predicted_class": "robbery",
+    "start_segment": 42,
+    "end_segment": 79,
+    "event_score": 0.8412766584232187
+  },
+  {
+    "video_id": "Fighting042_x264",
+    "predicted_class": "robbery",
+    "start_segment": 123,
+    "end_segment": 125,
+    "event_score": 0.820578779968475
+  },
+  {
+    "video_id": "Fighting042_x264",
+    "predicted_class": "robbery",
+    "start_segment": 25,
+    "end_segment": 34,
+    "event_score": 0.7455584211805188
+  },
+  {
+    "video_id": "Fighting042_x264",
+    "predicted_class": "robbery",
+    "start_segment": 113,
+    "end_segment": 113,
+    "event_score": 0.6054519154358502
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "predicted_class": "fighting",
+    "start_segment": 145,
+    "end_segment": 147,
+    "event_score": 0.8401477574974763
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "predicted_class": "fighting",
+    "start_segment": 223,
+    "end_segment": 223,
+    "event_score": 0.7785355213757299
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "predicted_class": "fighting",
+    "start_segment": 77,
+    "end_segment": 109,
+    "event_score": 0.7350952160278048
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "predicted_class": "fighting",
+    "start_segment": 232,
+    "end_segment": 234,
+    "event_score": 0.7152381606890508
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "predicted_class": "fighting",
+    "start_segment": 216,
+    "end_segment": 216,
+    "event_score": 0.6896311633565446
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "predicted_class": "fighting",
+    "start_segment": 38,
+    "end_segment": 68,
+    "event_score": 0.5304072666925563
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "predicted_class": "fighting",
+    "start_segment": 152,
+    "end_segment": 156,
+    "event_score": 0.5069547919415527
+  },
+  {
+    "video_id": "Fighting047_x264",
+    "predicted_class": "fighting",
+    "start_segment": 20,
+    "end_segment": 31,
+    "event_score": 0.4143181196044132
+  },
+  {
+    "video_id": "Shooting002_x264",
+    "predicted_class": "fighting",
+    "start_segment": 1,
+    "end_segment": 73,
+    "event_score": 0.865053354419242
+  },
+  {
+    "video_id": "Shooting004_x264",
+    "predicted_class": "explosion",
+    "start_segment": 21,
+    "end_segment": 106,
+    "event_score": 0.688341687696429
+  },
+  {
+    "video_id": "Shooting007_x264",
+    "predicted_class": "explosion",
+    "start_segment": 58,
+    "end_segment": 86,
+    "event_score": 0.549610516954111
+  },
+  {
+    "video_id": "Shooting007_x264",
+    "predicted_class": "shooting",
+    "start_segment": 2,
+    "end_segment": 20,
+    "event_score": 0.4194796123199751
+  },
+  {
+    "video_id": "Shooting008_x264",
+    "predicted_class": "robbery",
+    "start_segment": 5,
+    "end_segment": 7,
+    "event_score": 0.8767588864390063
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "predicted_class": "robbery",
+    "start_segment": 222,
+    "end_segment": 246,
+    "event_score": 0.9112399621848652
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "predicted_class": "robbery",
+    "start_segment": 139,
+    "end_segment": 205,
+    "event_score": 0.8611101385890159
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "predicted_class": "robbery",
+    "start_segment": 126,
+    "end_segment": 131,
+    "event_score": 0.7385426833834572
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "predicted_class": "robbery",
+    "start_segment": 216,
+    "end_segment": 216,
+    "event_score": 0.6146362855693894
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "predicted_class": "robbery",
+    "start_segment": 93,
+    "end_segment": 111,
+    "event_score": 0.6050785616749188
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "predicted_class": "robbery",
+    "start_segment": 87,
+    "end_segment": 87,
+    "event_score": 0.5573126015503149
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "predicted_class": "robbery",
+    "start_segment": 85,
+    "end_segment": 85,
+    "event_score": 0.4934909891413817
+  },
+  {
+    "video_id": "Shooting011_x264",
+    "predicted_class": "robbery",
+    "start_segment": 82,
+    "end_segment": 82,
+    "event_score": 0.3497953253991426
+  },
+  {
+    "video_id": "Shooting013_x264",
+    "predicted_class": "abuse",
+    "start_segment": 1,
+    "end_segment": 65,
+    "event_score": 0.799034070585094
+  },
+  {
+    "video_id": "Shooting015_x264",
+    "predicted_class": "robbery",
+    "start_segment": 4,
+    "end_segment": 5,
+    "event_score": 0.6890613019564924
+  },
+  {
+    "video_id": "Shooting015_x264",
+    "predicted_class": "robbery",
+    "start_segment": 13,
+    "end_segment": 15,
+    "event_score": 0.6593896174469727
+  },
+  {
+    "video_id": "Shooting015_x264",
+    "predicted_class": "robbery",
+    "start_segment": 5,
+    "end_segment": 5,
+    "event_score": 0.6213589679504672
+  },
+  {
+    "video_id": "Shooting015_x264",
+    "predicted_class": "shooting",
+    "start_segment": 64,
+    "end_segment": 104,
+    "event_score": 0.4884096972743244
+  },
+  {
+    "video_id": "Shooting018_x264",
+    "predicted_class": "robbery",
+    "start_segment": 10,
+    "end_segment": 14,
+    "event_score": 0.9200268337708373
+  },
+  {
+    "video_id": "Shooting018_x264",
+    "predicted_class": "robbery",
+    "start_segment": 0,
+    "end_segment": 2,
+    "event_score": 0.9120831344013425
+  },
+  {
+    "video_id": "Shooting018_x264",
+    "predicted_class": "robbery",
+    "start_segment": 21,
+    "end_segment": 32,
+    "event_score": 0.8816403713762355
+  },
+  {
+    "video_id": "Shooting018_x264",
+    "predicted_class": "robbery",
+    "start_segment": 38,
+    "end_segment": 38,
+    "event_score": 0.5821711696448801
+  },
+  {
+    "video_id": "Shooting019_x264",
+    "predicted_class": "explosion",
+    "start_segment": 2,
+    "end_segment": 169,
+    "event_score": 0.4650925847747551
+  },
+  {
+    "video_id": "Shooting021_x264",
+    "predicted_class": "shooting",
+    "start_segment": 23,
+    "end_segment": 70,
+    "event_score": 0.4825451772478395
+  },
+  {
+    "video_id": "Shooting021_x264",
+    "predicted_class": "shooting",
+    "start_segment": 75,
+    "end_segment": 78,
+    "event_score": 0.3216962217322248
+  },
+  {
+    "video_id": "Shooting022_x264",
+    "predicted_class": "robbery",
+    "start_segment": 194,
+    "end_segment": 196,
+    "event_score": 0.3526591394839329
+  },
+  {
+    "video_id": "Shooting022_x264",
+    "predicted_class": "robbery",
+    "start_segment": 180,
+    "end_segment": 180,
+    "event_score": 0.2792888338874846
+  },
+  {
+    "video_id": "Shooting026_x264",
+    "predicted_class": "shooting",
+    "start_segment": 2,
+    "end_segment": 85,
+    "event_score": 0.4683732431710652
+  },
+  {
+    "video_id": "Shooting028_x264",
+    "predicted_class": "robbery",
+    "start_segment": 13,
+    "end_segment": 21,
+    "event_score": 0.6731216309613046
+  },
+  {
+    "video_id": "Shooting028_x264",
+    "predicted_class": "shooting",
+    "start_segment": 30,
+    "end_segment": 115,
+    "event_score": 0.5487666726769191
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 1026,
+    "end_segment": 1030,
+    "event_score": 0.8237743376497519
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 1205,
+    "end_segment": 1206,
+    "event_score": 0.7742523673065449
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 1238,
+    "end_segment": 1265,
+    "event_score": 0.7430954676249506
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 525,
+    "end_segment": 528,
+    "event_score": 0.6079635871337885
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 674,
+    "end_segment": 675,
+    "event_score": 0.5562984924337115
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 1217,
+    "end_segment": 1228,
+    "event_score": 0.5415880285659078
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 960,
+    "end_segment": 962,
+    "event_score": 0.5292236868748468
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 682,
+    "end_segment": 682,
+    "event_score": 0.4857379615216928
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 942,
+    "end_segment": 946,
+    "event_score": 0.47731779947850583
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "abuse",
+    "start_segment": 301,
+    "end_segment": 301,
+    "event_score": 0.4705670455994948
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 769,
+    "end_segment": 851,
+    "event_score": 0.45967725328195996
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 500,
+    "end_segment": 524,
+    "event_score": 0.4160703436278048
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "robbery",
+    "start_segment": 0,
+    "end_segment": 1,
+    "event_score": 0.41166281946676264
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 911,
+    "end_segment": 922,
+    "event_score": 0.38061511615349275
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 688,
+    "end_segment": 689,
+    "event_score": 0.38012760785957767
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 1047,
+    "end_segment": 1050,
+    "event_score": 0.32542013388809465
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "robbery",
+    "start_segment": 231,
+    "end_segment": 235,
+    "event_score": 0.2988845948220664
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "robbery",
+    "start_segment": 130,
+    "end_segment": 151,
+    "event_score": 0.26107837999139605
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "robbery",
+    "start_segment": 277,
+    "end_segment": 277,
+    "event_score": 0.2547037045336964
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "robbery",
+    "start_segment": 34,
+    "end_segment": 36,
+    "event_score": 0.23979504620554692
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "shooting",
+    "start_segment": 893,
+    "end_segment": 896,
+    "event_score": 0.21494037837736357
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 634,
+    "end_segment": 638,
+    "event_score": 0.19837565870539287
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "fighting",
+    "start_segment": 872,
+    "end_segment": 876,
+    "event_score": 0.18364505769161354
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "explosion",
+    "start_segment": 266,
+    "end_segment": 266,
+    "event_score": 0.18353639898305296
+  },
+  {
+    "video_id": "Shooting032_x264",
+    "predicted_class": "robbery",
+    "start_segment": 659,
+    "end_segment": 659,
+    "event_score": 0.16844329029735405
+  },
+  {
+    "video_id": "Shooting033_x264",
+    "predicted_class": "robbery",
+    "start_segment": 99,
+    "end_segment": 128,
+    "event_score": 0.43997331242790594
+  },
+  {
+    "video_id": "Shooting033_x264",
+    "predicted_class": "shooting",
+    "start_segment": 135,
+    "end_segment": 138,
+    "event_score": 0.35538872757599194
+  },
+  {
+    "video_id": "Shooting034_x264",
+    "predicted_class": "robbery",
+    "start_segment": 66,
+    "end_segment": 68,
+    "event_score": 0.6326851572044063
+  },
+  {
+    "video_id": "Shooting037_x264",
+    "predicted_class": "abuse",
+    "start_segment": 2,
+    "end_segment": 17,
+    "event_score": 0.4119612009497189
+  },
+  {
+    "video_id": "Shooting043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 1,
+    "end_segment": 114,
+    "event_score": 0.7585487049140625
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "predicted_class": "robbery",
+    "start_segment": 19,
+    "end_segment": 59,
+    "event_score": 0.8507261663704639
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "predicted_class": "robbery",
+    "start_segment": 156,
+    "end_segment": 156,
+    "event_score": 0.8244522352730428
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "predicted_class": "robbery",
+    "start_segment": 286,
+    "end_segment": 316,
+    "event_score": 0.823995419398134
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "predicted_class": "robbery",
+    "start_segment": 95,
+    "end_segment": 99,
+    "event_score": 0.7685089034902717
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "predicted_class": "robbery",
+    "start_segment": 125,
+    "end_segment": 140,
+    "event_score": 0.7497177772127515
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "predicted_class": "robbery",
+    "start_segment": 220,
+    "end_segment": 266,
+    "event_score": 0.6850809756968559
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "predicted_class": "robbery",
+    "start_segment": 78,
+    "end_segment": 82,
+    "event_score": 0.6506370271610962
+  },
+  {
+    "video_id": "Shooting046_x264",
+    "predicted_class": "robbery",
+    "start_segment": 193,
+    "end_segment": 194,
+    "event_score": 0.603795036250041
+  },
+  {
+    "video_id": "Shooting047_x264",
+    "predicted_class": "fighting",
+    "start_segment": 173,
+    "end_segment": 173,
+    "event_score": 0.3975762820402693
+  },
+  {
+    "video_id": "Shooting048_x264",
+    "predicted_class": "robbery",
+    "start_segment": 88,
+    "end_segment": 88,
+    "event_score": 0.7288199484959677
+  },
+  {
+    "video_id": "Shooting048_x264",
+    "predicted_class": "robbery",
+    "start_segment": 89,
+    "end_segment": 89,
+    "event_score": 0.5185618841496762
+  },
+  {
+    "video_id": "Explosion002_x264",
+    "predicted_class": "explosion",
+    "start_segment": 95,
+    "end_segment": 122,
+    "event_score": 0.6553681040145882
+  },
+  {
+    "video_id": "Explosion002_x264",
+    "predicted_class": "robbery",
+    "start_segment": 148,
+    "end_segment": 150,
+    "event_score": 0.5254669608592302
+  },
+  {
+    "video_id": "Explosion002_x264",
+    "predicted_class": "fighting",
+    "start_segment": 182,
+    "end_segment": 184,
+    "event_score": 0.21312672340783934
+  },
+  {
+    "video_id": "Explosion004_x264",
+    "predicted_class": "explosion",
+    "start_segment": 2,
+    "end_segment": 21,
+    "event_score": 0.5682900606270209
+  },
+  {
+    "video_id": "Explosion004_x264",
+    "predicted_class": "fighting",
+    "start_segment": 26,
+    "end_segment": 115,
+    "event_score": 0.3382844544263257
+  },
+  {
+    "video_id": "Explosion007_x264",
+    "predicted_class": "explosion",
+    "start_segment": 1,
+    "end_segment": 1014,
+    "event_score": 0.7866433880316457
+  },
+  {
+    "video_id": "Explosion008_x264",
+    "predicted_class": "explosion",
+    "start_segment": 3,
+    "end_segment": 87,
+    "event_score": 0.7404641718758853
+  },
+  {
+    "video_id": "Explosion008_x264",
+    "predicted_class": "explosion",
+    "start_segment": 95,
+    "end_segment": 97,
+    "event_score": 0.6373849871647614
+  },
+  {
+    "video_id": "Explosion010_x264",
+    "predicted_class": "explosion",
+    "start_segment": 98,
+    "end_segment": 100,
+    "event_score": 0.9019583235044593
+  },
+  {
+    "video_id": "Explosion010_x264",
+    "predicted_class": "explosion",
+    "start_segment": 109,
+    "end_segment": 116,
+    "event_score": 0.810388541786061
+  },
+  {
+    "video_id": "Explosion010_x264",
+    "predicted_class": "explosion",
+    "start_segment": 121,
+    "end_segment": 121,
+    "event_score": 0.663820626765272
+  },
+  {
+    "video_id": "Explosion010_x264",
+    "predicted_class": "explosion",
+    "start_segment": 127,
+    "end_segment": 130,
+    "event_score": 0.6442222463035492
+  },
+  {
+    "video_id": "Explosion010_x264",
+    "predicted_class": "explosion",
+    "start_segment": 123,
+    "end_segment": 123,
+    "event_score": 0.5894128199108977
+  },
+  {
+    "video_id": "Explosion013_x264",
+    "predicted_class": "robbery",
+    "start_segment": 98,
+    "end_segment": 104,
+    "event_score": 0.7704508157125858
+  },
+  {
+    "video_id": "Explosion013_x264",
+    "predicted_class": "robbery",
+    "start_segment": 81,
+    "end_segment": 82,
+    "event_score": 0.6693556140320425
+  },
+  {
+    "video_id": "Explosion013_x264",
+    "predicted_class": "explosion",
+    "start_segment": 167,
+    "end_segment": 167,
+    "event_score": 0.6580142992182516
+  },
+  {
+    "video_id": "Explosion013_x264",
+    "predicted_class": "robbery",
+    "start_segment": 31,
+    "end_segment": 48,
+    "event_score": 0.6066279290584475
+  },
+  {
+    "video_id": "Explosion013_x264",
+    "predicted_class": "explosion",
+    "start_segment": 174,
+    "end_segment": 174,
+    "event_score": 0.5829990235992497
+  },
+  {
+    "video_id": "Explosion013_x264",
+    "predicted_class": "explosion",
+    "start_segment": 192,
+    "end_segment": 192,
+    "event_score": 0.5031998024062219
+  },
+  {
+    "video_id": "Explosion017_x264",
+    "predicted_class": "fighting",
+    "start_segment": 3,
+    "end_segment": 10,
+    "event_score": 0.813453949538868
+  },
+  {
+    "video_id": "Explosion017_x264",
+    "predicted_class": "fighting",
+    "start_segment": 43,
+    "end_segment": 99,
+    "event_score": 0.7880061952427653
+  },
+  {
+    "video_id": "Explosion017_x264",
+    "predicted_class": "fighting",
+    "start_segment": 29,
+    "end_segment": 33,
+    "event_score": 0.7165766219842595
+  },
+  {
+    "video_id": "Explosion017_x264",
+    "predicted_class": "fighting",
+    "start_segment": 21,
+    "end_segment": 24,
+    "event_score": 0.3418664077579905
+  },
+  {
+    "video_id": "Explosion020_x264",
+    "predicted_class": "fighting",
+    "start_segment": 1,
+    "end_segment": 72,
+    "event_score": 0.617027687276277
+  },
+  {
+    "video_id": "Explosion021_x264",
+    "predicted_class": "explosion",
+    "start_segment": 2,
+    "end_segment": 45,
+    "event_score": 0.8016424727745743
+  },
+  {
+    "video_id": "Explosion022_x264",
+    "predicted_class": "robbery",
+    "start_segment": 27,
+    "end_segment": 27,
+    "event_score": 0.7315794509297007
+  },
+  {
+    "video_id": "Explosion022_x264",
+    "predicted_class": "robbery",
+    "start_segment": 98,
+    "end_segment": 116,
+    "event_score": 0.6636480733157484
+  },
+  {
+    "video_id": "Explosion022_x264",
+    "predicted_class": "robbery",
+    "start_segment": 13,
+    "end_segment": 20,
+    "event_score": 0.6447317039290255
+  },
+  {
+    "video_id": "Explosion022_x264",
+    "predicted_class": "robbery",
+    "start_segment": 39,
+    "end_segment": 39,
+    "event_score": 0.5812399453467307
+  },
+  {
+    "video_id": "Explosion022_x264",
+    "predicted_class": "robbery",
+    "start_segment": 51,
+    "end_segment": 51,
+    "event_score": 0.47307739576763197
+  },
+  {
+    "video_id": "Explosion022_x264",
+    "predicted_class": "explosion",
+    "start_segment": 126,
+    "end_segment": 149,
+    "event_score": 0.4253596606014156
+  },
+  {
+    "video_id": "Explosion027_x264",
+    "predicted_class": "robbery",
+    "start_segment": 10,
+    "end_segment": 23,
+    "event_score": 0.8211633775520113
+  },
+  {
+    "video_id": "Explosion027_x264",
+    "predicted_class": "robbery",
+    "start_segment": 0,
+    "end_segment": 0,
+    "event_score": 0.642866449994365
+  },
+  {
+    "video_id": "Explosion027_x264",
+    "predicted_class": "robbery",
+    "start_segment": 36,
+    "end_segment": 37,
+    "event_score": 0.6034790116583508
+  },
+  {
+    "video_id": "Explosion028_x264",
+    "predicted_class": "abuse",
+    "start_segment": 71,
+    "end_segment": 78,
+    "event_score": 0.7188075423059459
+  },
+  {
+    "video_id": "Explosion028_x264",
+    "predicted_class": "abuse",
+    "start_segment": 70,
+    "end_segment": 70,
+    "event_score": 0.5649255461430407
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "predicted_class": "explosion",
+    "start_segment": 118,
+    "end_segment": 147,
+    "event_score": 0.6985609653512093
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "predicted_class": "shooting",
+    "start_segment": 15,
+    "end_segment": 17,
+    "event_score": 0.46660239875421894
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "predicted_class": "shooting",
+    "start_segment": 40,
+    "end_segment": 41,
+    "event_score": 0.4103962974396751
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "predicted_class": "shooting",
+    "start_segment": 74,
+    "end_segment": 77,
+    "event_score": 0.40501893139934353
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "predicted_class": "explosion",
+    "start_segment": 92,
+    "end_segment": 100,
+    "event_score": 0.3930937884304626
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "predicted_class": "shooting",
+    "start_segment": 3,
+    "end_segment": 3,
+    "event_score": 0.35046805269329795
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "predicted_class": "explosion",
+    "start_segment": 109,
+    "end_segment": 110,
+    "event_score": 0.3421585159134395
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "predicted_class": "shooting",
+    "start_segment": 25,
+    "end_segment": 25,
+    "event_score": 0.3224864430614218
+  },
+  {
+    "video_id": "Explosion029_x264",
+    "predicted_class": "shooting",
+    "start_segment": 7,
+    "end_segment": 10,
+    "event_score": 0.2835160777123562
+  },
+  {
+    "video_id": "Explosion033_x264",
+    "predicted_class": "explosion",
+    "start_segment": 79,
+    "end_segment": 83,
+    "event_score": 0.9356320006381935
+  },
+  {
+    "video_id": "Explosion033_x264",
+    "predicted_class": "explosion",
+    "start_segment": 61,
+    "end_segment": 71,
+    "event_score": 0.864541689756166
+  },
+  {
+    "video_id": "Explosion033_x264",
+    "predicted_class": "explosion",
+    "start_segment": 105,
+    "end_segment": 105,
+    "event_score": 0.6621898512173914
+  },
+  {
+    "video_id": "Explosion033_x264",
+    "predicted_class": "explosion",
+    "start_segment": 93,
+    "end_segment": 93,
+    "event_score": 0.5206248572633427
+  },
+  {
+    "video_id": "Explosion035_x264",
+    "predicted_class": "abuse",
+    "start_segment": 2,
+    "end_segment": 176,
+    "event_score": 0.6636237088729757
+  },
+  {
+    "video_id": "Explosion036_x264",
+    "predicted_class": "abuse",
+    "start_segment": 3,
+    "end_segment": 236,
+    "event_score": 0.7476200045931236
+  },
+  {
+    "video_id": "Explosion036_x264",
+    "predicted_class": "fighting",
+    "start_segment": 270,
+    "end_segment": 279,
+    "event_score": 0.5188393361049748
+  },
+  {
+    "video_id": "Explosion036_x264",
+    "predicted_class": "fighting",
+    "start_segment": 243,
+    "end_segment": 248,
+    "event_score": 0.4988902420225969
+  },
+  {
+    "video_id": "Explosion036_x264",
+    "predicted_class": "fighting",
+    "start_segment": 256,
+    "end_segment": 264,
+    "event_score": 0.48629941621852524
+  },
+  {
+    "video_id": "Explosion036_x264",
+    "predicted_class": "explosion",
+    "start_segment": 315,
+    "end_segment": 330,
+    "event_score": 0.356915268249125
+  },
+  {
+    "video_id": "Explosion036_x264",
+    "predicted_class": "shooting",
+    "start_segment": 288,
+    "end_segment": 288,
+    "event_score": 0.2200094609121379
+  },
+  {
+    "video_id": "Explosion039_x264",
+    "predicted_class": "fighting",
+    "start_segment": 43,
+    "end_segment": 57,
+    "event_score": 0.5975258073731453
+  },
+  {
+    "video_id": "Explosion039_x264",
+    "predicted_class": "robbery",
+    "start_segment": 6,
+    "end_segment": 16,
+    "event_score": 0.5240937160117625
+  },
+  {
+    "video_id": "Explosion039_x264",
+    "predicted_class": "robbery",
+    "start_segment": 31,
+    "end_segment": 34,
+    "event_score": 0.48575660383644603
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 351,
+    "end_segment": 353,
+    "event_score": 0.8097056931183637
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 453,
+    "end_segment": 475,
+    "event_score": 0.758767242429613
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 377,
+    "end_segment": 385,
+    "event_score": 0.7582998784567678
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 362,
+    "end_segment": 366,
+    "event_score": 0.7317776861813883
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 335,
+    "end_segment": 340,
+    "event_score": 0.6973704779684802
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 345,
+    "end_segment": 346,
+    "event_score": 0.6602771802575376
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 391,
+    "end_segment": 392,
+    "event_score": 0.6066552200331898
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 375,
+    "end_segment": 375,
+    "event_score": 0.5897266293946046
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "abuse",
+    "start_segment": 281,
+    "end_segment": 281,
+    "event_score": 0.4644205249701443
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "abuse",
+    "start_segment": 312,
+    "end_segment": 312,
+    "event_score": 0.4627168752626716
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "abuse",
+    "start_segment": 92,
+    "end_segment": 95,
+    "event_score": 0.4025037456930747
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "robbery",
+    "start_segment": 285,
+    "end_segment": 285,
+    "event_score": 0.317980601244102
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 288,
+    "end_segment": 302,
+    "event_score": 0.3012643191094959
+  },
+  {
+    "video_id": "Explosion043_x264",
+    "predicted_class": "fighting",
+    "start_segment": 286,
+    "end_segment": 287,
+    "event_score": 0.2422821125298853
+  },
+  {
+    "video_id": "Robbery048_x264",
+    "predicted_class": "robbery",
+    "start_segment": 58,
+    "end_segment": 58,
+    "event_score": 0.862056189633222
+  },
+  {
+    "video_id": "Robbery048_x264",
+    "predicted_class": "robbery",
+    "start_segment": 32,
+    "end_segment": 43,
+    "event_score": 0.7674155839440147
+  },
+  {
+    "video_id": "Robbery102_x264",
+    "predicted_class": "fighting",
+    "start_segment": 93,
+    "end_segment": 93,
+    "event_score": 0.5902314032581835
+  },
+  {
+    "video_id": "Robbery102_x264",
+    "predicted_class": "fighting",
+    "start_segment": 72,
+    "end_segment": 85,
+    "event_score": 0.5561314553174022
+  },
+  {
+    "video_id": "Robbery102_x264",
+    "predicted_class": "fighting",
+    "start_segment": 99,
+    "end_segment": 99,
+    "event_score": 0.4294184025825132
+  },
+  {
+    "video_id": "Robbery102_x264",
+    "predicted_class": "robbery",
+    "start_segment": 91,
+    "end_segment": 91,
+    "event_score": 0.2261227489128359
+  },
+  {
+    "video_id": "Robbery102_x264",
+    "predicted_class": "fighting",
+    "start_segment": 87,
+    "end_segment": 87,
+    "event_score": 0.007136730203342712
+  },
+  {
+    "video_id": "Robbery106_x264",
+    "predicted_class": "shooting",
+    "start_segment": 33,
+    "end_segment": 39,
+    "event_score": 0.36395023098484636
+  },
+  {
+    "video_id": "Robbery106_x264",
+    "predicted_class": "robbery",
+    "start_segment": 24,
+    "end_segment": 27,
+    "event_score": 0.28219566772230564
+  },
+  {
+    "video_id": "Robbery137_x264",
+    "predicted_class": "robbery",
+    "start_segment": 65,
+    "end_segment": 94,
+    "event_score": 0.8334148717127441
+  },
+  {
+    "video_id": "Robbery137_x264",
+    "predicted_class": "robbery",
+    "start_segment": 16,
+    "end_segment": 17,
+    "event_score": 0.762354753795897
+  },
+  {
+    "video_id": "Robbery137_x264",
+    "predicted_class": "robbery",
+    "start_segment": 99,
+    "end_segment": 101,
+    "event_score": 0.6960899875798212
+  },
+  {
+    "video_id": "Robbery137_x264",
+    "predicted_class": "robbery",
+    "start_segment": 44,
+    "end_segment": 51,
+    "event_score": 0.6849629573250837
+  },
+  {
+    "video_id": "Robbery137_x264",
+    "predicted_class": "robbery",
+    "start_segment": 106,
+    "end_segment": 107,
+    "event_score": 0.6497632327977954
+  },
+  {
+    "video_id": "Normal_Videos_014_x264",
+    "predicted_class": "robbery",
+    "start_segment": 20,
+    "end_segment": 31,
+    "event_score": 0.7730287157675093
+  },
+  {
+    "video_id": "Normal_Videos_014_x264",
+    "predicted_class": "robbery",
+    "start_segment": 10,
+    "end_segment": 13,
+    "event_score": 0.6960575965637155
+  },
+  {
+    "video_id": "Normal_Videos_014_x264",
+    "predicted_class": "robbery",
+    "start_segment": 18,
+    "end_segment": 18,
+    "event_score": 0.6317112990802798
+  },
+  {
+    "video_id": "Normal_Videos_175_x264",
+    "predicted_class": "fighting",
+    "start_segment": 256,
+    "end_segment": 256,
+    "event_score": 0.6453821675609461
+  },
+  {
+    "video_id": "Normal_Videos_175_x264",
+    "predicted_class": "fighting",
+    "start_segment": 161,
+    "end_segment": 173,
+    "event_score": 0.595551062900924
+  },
+  {
+    "video_id": "Normal_Videos_175_x264",
+    "predicted_class": "fighting",
+    "start_segment": 174,
+    "end_segment": 177,
+    "event_score": 0.4611254235169149
+  },
+  {
+    "video_id": "Normal_Videos_175_x264",
+    "predicted_class": "shooting",
+    "start_segment": 113,
+    "end_segment": 114,
+    "event_score": 0.3832051460846344
+  },
+  {
+    "video_id": "Normal_Videos_175_x264",
+    "predicted_class": "fighting",
+    "start_segment": 239,
+    "end_segment": 241,
+    "event_score": 0.3779679164114498
+  },
+  {
+    "video_id": "Normal_Videos_175_x264",
+    "predicted_class": "shooting",
+    "start_segment": 107,
+    "end_segment": 108,
+    "event_score": 0.37795184977042595
+  },
+  {
+    "video_id": "Normal_Videos_246_x264",
+    "predicted_class": "robbery",
+    "start_segment": 164,
+    "end_segment": 194,
+    "event_score": 0.6706875713246454
+  },
+  {
+    "video_id": "Normal_Videos_246_x264",
+    "predicted_class": "abuse",
+    "start_segment": 195,
+    "end_segment": 199,
+    "event_score": 0.3643259814251678
+  },
+  {
+    "video_id": "Normal_Videos_365_x264",
+    "predicted_class": "abuse",
+    "start_segment": 405,
+    "end_segment": 408,
+    "event_score": 0.6213875814899552
+  },
+  {
+    "video_id": "Normal_Videos_365_x264",
+    "predicted_class": "abuse",
+    "start_segment": 409,
+    "end_segment": 412,
+    "event_score": 0.5418881005278138
+  },
+  {
+    "video_id": "Normal_Videos_417_x264",
+    "predicted_class": "robbery",
+    "start_segment": 45,
+    "end_segment": 46,
+    "event_score": 0.8779274019769616
+  },
+  {
+    "video_id": "Normal_Videos_417_x264",
+    "predicted_class": "robbery",
+    "start_segment": 29,
+    "end_segment": 31,
+    "event_score": 0.8149366409134302
+  },
+  {
+    "video_id": "Normal_Videos_417_x264",
+    "predicted_class": "robbery",
+    "start_segment": 37,
+    "end_segment": 38,
+    "event_score": 0.6281765456318311
+  },
+  {
+    "video_id": "Normal_Videos_417_x264",
+    "predicted_class": "robbery",
+    "start_segment": 11,
+    "end_segment": 12,
+    "event_score": 0.6131758576505817
+  },
+  {
+    "video_id": "Normal_Videos_417_x264",
+    "predicted_class": "robbery",
+    "start_segment": 42,
+    "end_segment": 42,
+    "event_score": 0.5057950226531176
+  },
+  {
+    "video_id": "Normal_Videos_606_x264",
+    "predicted_class": "robbery",
+    "start_segment": 19,
+    "end_segment": 20,
+    "event_score": 0.5386825252382152
+  },
+  {
+    "video_id": "Normal_Videos_606_x264",
+    "predicted_class": "robbery",
+    "start_segment": 54,
+    "end_segment": 55,
+    "event_score": 0.456112940783747
+  },
+  {
+    "video_id": "Normal_Videos_606_x264",
+    "predicted_class": "robbery",
+    "start_segment": 15,
+    "end_segment": 18,
+    "event_score": 0.37775413668153845
+  },
+  {
+    "video_id": "Normal_Videos_641_x264",
+    "predicted_class": "robbery",
+    "start_segment": 173,
+    "end_segment": 173,
+    "event_score": 0.7087729498215651
+  },
+  {
+    "video_id": "Normal_Videos_696_x264",
+    "predicted_class": "abuse",
+    "start_segment": 89,
+    "end_segment": 90,
+    "event_score": 0.5990985192527845
+  },
+  {
+    "video_id": "Normal_Videos_696_x264",
+    "predicted_class": "abuse",
+    "start_segment": 35,
+    "end_segment": 36,
+    "event_score": 0.4440112023642442
+  },
+  {
+    "video_id": "Normal_Videos_696_x264",
+    "predicted_class": "abuse",
+    "start_segment": 113,
+    "end_segment": 113,
+    "event_score": 0.3971258085195757
+  },
+  {
+    "video_id": "Normal_Videos_696_x264",
+    "predicted_class": "abuse",
+    "start_segment": 91,
+    "end_segment": 94,
+    "event_score": 0.3241720277080695
+  },
+  {
+    "video_id": "Normal_Videos_696_x264",
+    "predicted_class": "abuse",
+    "start_segment": 152,
+    "end_segment": 155,
+    "event_score": 0.30595057370970125
+  },
+  {
+    "video_id": "Normal_Videos_696_x264",
+    "predicted_class": "abuse",
+    "start_segment": 43,
+    "end_segment": 43,
+    "event_score": 0.07433988145920623
+  },
+  {
+    "video_id": "Normal_Videos_722_x264",
+    "predicted_class": "robbery",
+    "start_segment": 318,
+    "end_segment": 319,
+    "event_score": 0.9344004648869486
+  },
+  {
+    "video_id": "Normal_Videos_722_x264",
+    "predicted_class": "robbery",
+    "start_segment": 418,
+    "end_segment": 420,
+    "event_score": 0.7003715034141784
+  },
+  {
+    "video_id": "Normal_Videos_722_x264",
+    "predicted_class": "explosion",
+    "start_segment": 61,
+    "end_segment": 63,
+    "event_score": 0.45243969346187285
+  },
+  {
+    "video_id": "Normal_Videos_801_x264",
+    "predicted_class": "robbery",
+    "start_segment": 69,
+    "end_segment": 69,
+    "event_score": 0.7014894773994129
+  },
+  {
+    "video_id": "Normal_Videos_874_x264",
+    "predicted_class": "robbery",
+    "start_segment": 35,
+    "end_segment": 47,
+    "event_score": 0.796178338177377
+  },
+  {
+    "video_id": "Normal_Videos_874_x264",
+    "predicted_class": "robbery",
+    "start_segment": 136,
+    "end_segment": 136,
+    "event_score": 0.7084670109998399
+  },
+  {
+    "video_id": "Normal_Videos_877_x264",
+    "predicted_class": "robbery",
+    "start_segment": 552,
+    "end_segment": 557,
+    "event_score": 0.5657787083596162
+  },
+  {
+    "video_id": "Normal_Videos_877_x264",
+    "predicted_class": "abuse",
+    "start_segment": 29,
+    "end_segment": 30,
+    "event_score": 0.5616531693100626
+  },
+  {
+    "video_id": "Normal_Videos_877_x264",
+    "predicted_class": "abuse",
+    "start_segment": 484,
+    "end_segment": 485,
+    "event_score": 0.5361006903717325
+  },
+  {
+    "video_id": "Normal_Videos_877_x264",
+    "predicted_class": "robbery",
+    "start_segment": 541,
+    "end_segment": 543,
+    "event_score": 0.46887078839271723
+  },
+  {
+    "video_id": "Normal_Videos_878_x264",
+    "predicted_class": "explosion",
+    "start_segment": 3,
+    "end_segment": 14,
+    "event_score": 0.914827596182878
+  },
+  {
+    "video_id": "Normal_Videos_884_x264",
+    "predicted_class": "robbery",
+    "start_segment": 323,
+    "end_segment": 325,
+    "event_score": 0.6247076529875919
+  },
+  {
+    "video_id": "Normal_Videos_884_x264",
+    "predicted_class": "robbery",
+    "start_segment": 227,
+    "end_segment": 229,
+    "event_score": 0.6080618184598734
+  },
+  {
+    "video_id": "Normal_Videos_884_x264",
+    "predicted_class": "robbery",
+    "start_segment": 75,
+    "end_segment": 76,
+    "event_score": 0.4232032145838218
+  },
+  {
+    "video_id": "Normal_Videos_885_x264",
+    "predicted_class": "fighting",
+    "start_segment": 10,
+    "end_segment": 26,
+    "event_score": 0.5012990774938579
+  },
+  {
+    "video_id": "Normal_Videos_886_x264",
+    "predicted_class": "robbery",
+    "start_segment": 1,
+    "end_segment": 18,
+    "event_score": 0.6617295736666193
+  },
+  {
+    "video_id": "Normal_Videos_886_x264",
+    "predicted_class": "robbery",
+    "start_segment": 165,
+    "end_segment": 167,
+    "event_score": 0.6614920669593403
+  },
+  {
+    "video_id": "Normal_Videos_886_x264",
+    "predicted_class": "robbery",
+    "start_segment": 146,
+    "end_segment": 146,
+    "event_score": 0.6457231761988211
+  },
+  {
+    "video_id": "Normal_Videos_886_x264",
+    "predicted_class": "robbery",
+    "start_segment": 38,
+    "end_segment": 39,
+    "event_score": 0.6349003901881645
+  },
+  {
+    "video_id": "Normal_Videos_886_x264",
+    "predicted_class": "robbery",
+    "start_segment": 57,
+    "end_segment": 59,
+    "event_score": 0.6141931185226817
+  },
+  {
+    "video_id": "Normal_Videos_887_x264",
+    "predicted_class": "explosion",
+    "start_segment": 103,
+    "end_segment": 113,
+    "event_score": 0.6861107870473688
+  },
+  {
+    "video_id": "Normal_Videos_887_x264",
+    "predicted_class": "explosion",
+    "start_segment": 46,
+    "end_segment": 88,
+    "event_score": 0.6380608523559772
+  },
+  {
+    "video_id": "Normal_Videos_887_x264",
+    "predicted_class": "explosion",
+    "start_segment": 465,
+    "end_segment": 465,
+    "event_score": 0.5940630828569837
+  },
+  {
+    "video_id": "Normal_Videos_887_x264",
+    "predicted_class": "explosion",
+    "start_segment": 233,
+    "end_segment": 238,
+    "event_score": 0.5920177190625253
+  },
+  {
+    "video_id": "Normal_Videos_887_x264",
+    "predicted_class": "explosion",
+    "start_segment": 445,
+    "end_segment": 445,
+    "event_score": 0.5126991924177453
+  },
+  {
+    "video_id": "Normal_Videos_887_x264",
+    "predicted_class": "explosion",
+    "start_segment": 117,
+    "end_segment": 119,
+    "event_score": 0.5082113790970304
+  },
+  {
+    "video_id": "Normal_Videos_887_x264",
+    "predicted_class": "explosion",
+    "start_segment": 128,
+    "end_segment": 129,
+    "event_score": 0.4972279958577417
+  },
+  {
+    "video_id": "Normal_Videos_887_x264",
+    "predicted_class": "explosion",
+    "start_segment": 191,
+    "end_segment": 194,
+    "event_score": 0.3849045116761829
+  },
+  {
+    "video_id": "Normal_Videos_887_x264",
+    "predicted_class": "fighting",
+    "start_segment": 172,
+    "end_segment": 178,
+    "event_score": 0.3697881356630326
+  },
+  {
+    "video_id": "Normal_Videos_888_x264",
+    "predicted_class": "robbery",
+    "start_segment": 34,
+    "end_segment": 34,
+    "event_score": 0.656422565472397
+  },
+  {
+    "video_id": "Normal_Videos_888_x264",
+    "predicted_class": "robbery",
+    "start_segment": 3,
+    "end_segment": 3,
+    "event_score": 0.6143714194043355
+  },
+  {
+    "video_id": "Normal_Videos_890_x264",
+    "predicted_class": "fighting",
+    "start_segment": 48,
+    "end_segment": 50,
+    "event_score": 0.7078559480932682
+  },
+  {
+    "video_id": "Normal_Videos_900_x264",
+    "predicted_class": "abuse",
+    "start_segment": 69,
+    "end_segment": 70,
+    "event_score": 0.40210145330115665
+  },
+  {
+    "video_id": "Normal_Videos_900_x264",
+    "predicted_class": "robbery",
+    "start_segment": 56,
+    "end_segment": 58,
+    "event_score": 0.2638258666549884
+  },
+  {
+    "video_id": "Normal_Videos_900_x264",
+    "predicted_class": "abuse",
+    "start_segment": 75,
+    "end_segment": 78,
+    "event_score": 0.22349340341841994
+  },
+  {
+    "video_id": "Normal_Videos_901_x264",
+    "predicted_class": "explosion",
+    "start_segment": 1,
+    "end_segment": 3,
+    "event_score": 0.5354792849129808
+  },
+  {
+    "video_id": "Normal_Videos_901_x264",
+    "predicted_class": "fighting",
+    "start_segment": 9,
+    "end_segment": 43,
+    "event_score": 0.5221148475834525
+  },
+  {
+    "video_id": "Normal_Videos_901_x264",
+    "predicted_class": "explosion",
+    "start_segment": 68,
+    "end_segment": 71,
+    "event_score": 0.2733925542902682
+  },
+  {
+    "video_id": "Normal_Videos_901_x264",
+    "predicted_class": "fighting",
+    "start_segment": 57,
+    "end_segment": 58,
+    "event_score": 0.23822785953142223
+  },
+  {
+    "video_id": "Normal_Videos_901_x264",
+    "predicted_class": "explosion",
+    "start_segment": 50,
+    "end_segment": 52,
+    "event_score": 0.22510613553911618
+  },
+  {
+    "video_id": "Normal_Videos_923_x264",
+    "predicted_class": "robbery",
+    "start_segment": 76,
+    "end_segment": 77,
+    "event_score": 0.8471309635050659
+  },
+  {
+    "video_id": "Normal_Videos_923_x264",
+    "predicted_class": "robbery",
+    "start_segment": 772,
+    "end_segment": 776,
+    "event_score": 0.8092328236650204
+  },
+  {
+    "video_id": "Normal_Videos_923_x264",
+    "predicted_class": "robbery",
+    "start_segment": 879,
+    "end_segment": 882,
+    "event_score": 0.7472282184351542
+  },
+  {
+    "video_id": "Normal_Videos_923_x264",
+    "predicted_class": "robbery",
+    "start_segment": 123,
+    "end_segment": 124,
+    "event_score": 0.742665905996887
+  },
+  {
+    "video_id": "Normal_Videos_923_x264",
+    "predicted_class": "robbery",
+    "start_segment": 851,
+    "end_segment": 855,
+    "event_score": 0.7289857227490302
+  },
+  {
+    "video_id": "Normal_Videos_923_x264",
+    "predicted_class": "robbery",
+    "start_segment": 1056,
+    "end_segment": 1066,
+    "event_score": 0.6657536790834975
+  },
+  {
+    "video_id": "Normal_Videos_923_x264",
+    "predicted_class": "robbery",
+    "start_segment": 1010,
+    "end_segment": 1010,
+    "event_score": 0.5633574545871269
+  },
+  {
+    "video_id": "Normal_Videos_923_x264",
+    "predicted_class": "robbery",
+    "start_segment": 784,
+    "end_segment": 785,
+    "event_score": 0.5600664793904571
+  },
+  {
+    "video_id": "Normal_Videos_923_x264",
+    "predicted_class": "robbery",
+    "start_segment": 856,
+    "end_segment": 856,
+    "event_score": 0.5458373174184885
+  },
+  {
+    "video_id": "Normal_Videos_925_x264",
+    "predicted_class": "explosion",
+    "start_segment": 464,
+    "end_segment": 468,
+    "event_score": 0.7339879222353147
+  },
+  {
+    "video_id": "Normal_Videos_940_x264",
+    "predicted_class": "robbery",
+    "start_segment": 665,
+    "end_segment": 665,
+    "event_score": 0.7398078035443305
+  },
+  {
+    "video_id": "Normal_Videos_940_x264",
+    "predicted_class": "robbery",
+    "start_segment": 448,
+    "end_segment": 455,
+    "event_score": 0.7347115600127871
+  },
+  {
+    "video_id": "Normal_Videos_940_x264",
+    "predicted_class": "robbery",
+    "start_segment": 1891,
+    "end_segment": 1892,
+    "event_score": 0.6882806539501019
+  },
+  {
+    "video_id": "Normal_Videos_940_x264",
+    "predicted_class": "robbery",
+    "start_segment": 460,
+    "end_segment": 460,
+    "event_score": 0.6478297135666011
+  },
+  {
+    "video_id": "Normal_Videos_940_x264",
+    "predicted_class": "robbery",
+    "start_segment": 458,
+    "end_segment": 458,
+    "event_score": 0.6359245253143015
+  },
+  {
+    "video_id": "Normal_Videos_940_x264",
+    "predicted_class": "robbery",
+    "start_segment": 502,
+    "end_segment": 502,
+    "event_score": 0.5953951205548158
+  }
+]

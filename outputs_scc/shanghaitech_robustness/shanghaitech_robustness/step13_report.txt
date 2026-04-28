@@ -1,0 +1,31 @@
+1) ShanghaiTech dataset summary
+- total videos evaluated: 199
+- normal count: 155
+- anomaly count: 44
+- split used: test
+
+2) Feature extraction summary
+- total extracted: 199
+- total failed: 0
+- segments min/max/mean: 12 / 115 / 44.236181
+- extractor settings matched UCF/XD/RWF: frozen_i3d=True segment_length=16 overlap=0 tail_rule=drop
+
+3) Robustness metrics
+- AUC: 0.370528
+- AP: 0.216516
+
+4) Error profile
+- false positives: 0
+- false negatives: 43
+- confusion matrix labels: ['normal', 'anomaly']
+- confusion matrix: [[155, 0], [43, 1]]
+- failure-mode guess: likely weak anomaly confidence / conservative thresholding (many false negatives)
+
+5) Five qualitative examples
+- strong successes (3):
+  - 09_003 | gt=normal | pred=normal | anomaly_score=0.000000 | note=normal clip correctly rejected.
+  - 11_003 | gt=normal | pred=normal | anomaly_score=0.000000 | note=normal clip correctly rejected.
+  - 03_005 | gt=normal | pred=normal | anomaly_score=0.000000 | note=normal clip correctly rejected.
+- failures (2):
+  - 08_0080 | gt=anomaly | pred=normal | anomaly_score=0.000000 | note=false negative; anomaly missed.
+  - 04_0011 | gt=anomaly | pred=normal | anomaly_score=0.000000 | note=false negative; anomaly missed.

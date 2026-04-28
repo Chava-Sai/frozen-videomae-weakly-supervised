@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-04-17" agent="Claude" version="21.0.0">
+  <diagram name="IVC Project Workflow" id="ivc-wf"><mxGraphModel dx="1800" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1800" pageHeight="2130" math="0" shadow="1">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="2" value="&lt;div style='font-size:22px;font-weight:bold;color:#1a237e;'&gt;IVC Project — Complete End-to-End Workflow&lt;/div&gt;&lt;div style='font-size:13px;color:#555;margin-top:3px;'&gt;Boston University CS &amp;nbsp;·&amp;nbsp; Weakly-Supervised Violence Detection in Surveillance Video &amp;nbsp;·&amp;nbsp; Srinivasa Sai Chava&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="80" y="15" width="1640" height="65" as="geometry" />
+    </mxCell>
+    <mxCell id="3" value="📌  PHASE 1 — Problem Definition" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dde1ff;strokeColor=#3730a3;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#1e1b4b;" vertex="1" parent="1">
+      <mxGeometry x="80" y="95" width="1640" height="125" as="geometry" />
+    </mxCell>
+    <mxCell id="4" value="&lt;b&gt;Research Question&lt;/b&gt;&lt;br/&gt;Can we detect, classify &amp;amp; temporally&lt;br/&gt;localize violence events using only&lt;br/&gt;video-level weak labels?" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef2ff;strokeColor=#4338ca;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="143" width="500" height="65" as="geometry" />
+    </mxCell>
+    <mxCell id="5" value="&lt;b&gt;Core Approach&lt;/b&gt;&lt;br/&gt;Multiple Instance Learning (MIL) +&lt;br/&gt;Temporal Refinement + Boundary prediction&lt;br/&gt;with frozen backbone features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef2ff;strokeColor=#4338ca;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="650" y="143" width="500" height="65" as="geometry" />
+    </mxCell>
+    <mxCell id="6" value="&lt;b&gt;Key Innovation&lt;/b&gt;&lt;br/&gt;Replace I3D (2017) backbone with&lt;br/&gt;VideoMAE-B (2022) masked autoencoder&lt;br/&gt;— same architecture, better features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef2ff;strokeColor=#4338ca;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1200" y="143" width="500" height="65" as="geometry" />
+    </mxCell>
+    <mxCell id="8" value="📁  PHASE 2 — Dataset: UCF-Crime Violence Subset" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#15803d;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#14532d;" vertex="1" parent="1">
+      <mxGeometry x="80" y="250" width="1640" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="9" value="&lt;b&gt;UCF-Crime Dataset&lt;/b&gt;&lt;br/&gt;Sultani et al. CVPR 2018&lt;br/&gt;Surveillance camera footage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="300" width="370" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="10" value="&lt;b&gt;1,300 Videos&lt;/b&gt;&lt;br/&gt;~950 training · ~350 test&lt;br/&gt;Violence subset only" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="500" y="300" width="340" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="11" value="&lt;b&gt;6 Categories&lt;/b&gt;&lt;br/&gt;Abuse · Explosion · Fighting&lt;br/&gt;Robbery · Shooting · Normal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="870" y="300" width="370" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="12" value="&lt;b&gt;Weak Supervision Only&lt;/b&gt;&lt;br/&gt;Video-level binary labels +&lt;br/&gt;category label (no frame annotations)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1270" y="300" width="430" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2.5;strokeColor=#555555;fontSize=11;" edge="1" source="3" target="8" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="14" value="⚙️  PHASE 3 — Feature Extraction  (two pipelines, same 1,300 videos)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#737373;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#404040;" vertex="1" parent="1">
+      <mxGeometry x="80" y="420" width="1640" height="310" as="geometry" />
+    </mxCell>
+    <mxCell id="15" value="🔴  I3D Baseline (Step-7)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#c2410c;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#7c2d12;" vertex="1" parent="1">
+      <mxGeometry x="95" y="468" width="775" height="250" as="geometry" />
+    </mxCell>
+    <mxCell id="16" value="&lt;b&gt;Frozen I3D&lt;/b&gt;&lt;br/&gt;Pre-trained Kinetics-400&lt;br/&gt;Two-stream (RGB + Flow)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="110" y="525" width="350" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="17" value="&lt;b&gt;16-frame segments&lt;/b&gt;&lt;br/&gt;Non-overlapping · tail drop&lt;br/&gt;Video → {v₁,…,vT}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="480" y="525" width="370" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="18" value="&lt;b&gt;Feature dim D = 2048&lt;/b&gt;&lt;br/&gt;f_t ∈ ℝ²⁰⁴⁸&lt;br/&gt;Higher risk of overfitting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="110" y="625" width="350" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="19" value="&lt;b&gt;Output: 1,300 .npz files&lt;/b&gt;&lt;br/&gt;Cached to disk · reused every run&lt;br/&gt;Step-7 pipeline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="480" y="625" width="370" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1.8;strokeColor=#ea580c;endArrow=block;endFill=1;fontSize=10;" edge="1" source="16" target="17" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1.8;strokeColor=#ea580c;endArrow=block;endFill=1;fontSize=10;" edge="1" source="18" target="19" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="22" value="🔵  VideoMAE-B  (Our Upgrade)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#1d4ed8;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#1e3a8a;" vertex="1" parent="1">
+      <mxGeometry x="930" y="468" width="775" height="250" as="geometry" />
+    </mxCell>
+    <mxCell id="23" value="&lt;b&gt;Frozen VideoMAE-B&lt;/b&gt;&lt;br/&gt;MCG-NJU · Pre-trained Kinetics-400&lt;br/&gt;ViT-B masked autoencoder" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="945" y="525" width="350" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="24" value="&lt;b&gt;16-frame segments&lt;/b&gt;&lt;br/&gt;Non-overlapping · tail drop&lt;br/&gt;Identical to I3D pipeline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1315" y="525" width="375" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="25" value="&lt;b&gt;Feature dim D = 768&lt;/b&gt;&lt;br/&gt;f_t ∈ ℝ⁷⁶⁸ · 3× smaller&lt;br/&gt;Reduces overfitting risk" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="945" y="625" width="230" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="26" value="&lt;b&gt;BU SCC · NVIDIA A100&lt;/b&gt;&lt;br/&gt;494.6 s total · 0.38 s/video&lt;br/&gt;Transformers 5.5.4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1195" y="625" width="240" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="27" value="&lt;b&gt;Output: 1,300 .npz files&lt;/b&gt;&lt;br/&gt;Cached · resume-safe&lt;br/&gt;0 failures" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1455" y="625" width="235" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1.8;strokeColor=#2563eb;endArrow=block;endFill=1;fontSize=10;" edge="1" source="23" target="24" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1.8;strokeColor=#2563eb;endArrow=block;endFill=1;fontSize=10;" edge="1" source="25" target="26" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1.8;strokeColor=#2563eb;endArrow=block;endFill=1;fontSize=10;" edge="1" source="26" target="27" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2.5;strokeColor=#555555;fontSize=11;" edge="1" source="8" target="14" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="32" value="🧠  PHASE 4 — Model Architecture  (Shared · 1.9M trainable params · 86M frozen)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#4c1d95;" vertex="1" parent="1">
+      <mxGeometry x="80" y="760" width="1640" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="33" value="&lt;b&gt;MIL Anomaly Scorer&lt;/b&gt;&lt;br/&gt;2-layer MLP · σ(W₃ Dropout(ReLU(…)))&lt;br/&gt;s_t ∈ [0,1] per segment&lt;br/&gt;ℒ_MIL ranking loss&lt;br/&gt;&lt;i&gt;1.1M params&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#7c3aed;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="812" width="370" height="150" as="geometry" />
+    </mxCell>
+    <mxCell id="37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1.8;strokeColor=#7c3aed;endArrow=block;endFill=1;fontSize=10;" edge="1" source="33" target="34" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="34" value="&lt;b&gt;Event Classifier&lt;/b&gt;&lt;br/&gt;7-class softmax head&lt;br/&gt;Top-k pseudo-positive segments&lt;br/&gt;Inv-freq weighted CE loss&lt;br/&gt;&lt;i&gt;0.3M params&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#7c3aed;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="510" y="812" width="370" height="150" as="geometry" />
+    </mxCell>
+    <mxCell id="38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1.8;strokeColor=#7c3aed;endArrow=block;endFill=1;fontSize=10;" edge="1" source="34" target="35" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="35" value="&lt;b&gt;Temporal Refinement (TRN)&lt;/b&gt;&lt;br/&gt;Transformer encoder&lt;br/&gt;Multi-head self-attention over {f_t}&lt;br/&gt;Refined scores s̃_t&lt;br/&gt;&lt;i&gt;0.4M params&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#7c3aed;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="920" y="812" width="370" height="150" as="geometry" />
+    </mxCell>
+    <mxCell id="39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1.8;strokeColor=#7c3aed;endArrow=block;endFill=1;fontSize=10;" edge="1" source="35" target="36" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="36" value="&lt;b&gt;Boundary Head&lt;/b&gt;&lt;br/&gt;b_t = σ(W_b[h̃_t; h̃_{t+1}; |s̃_t − s̃_{t+1}|])&lt;br/&gt;Boundary consistency loss ℒ_bnd&lt;br/&gt;Predicts event start/end&lt;br/&gt;&lt;i&gt;0.1M params&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#7c3aed;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1330" y="812" width="370" height="150" as="geometry" />
+    </mxCell>
+    <mxCell id="31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2.5;strokeColor=#555555;fontSize=11;" edge="1" source="14" target="32" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="41" value="🏋️  PHASE 5 — Training Recipe  (3 Innovations beyond vanilla RTFM)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#78350f;" vertex="1" parent="1">
+      <mxGeometry x="80" y="1010" width="1640" height="190" as="geometry" />
+    </mxCell>
+    <mxCell id="42" value="&lt;b&gt;① Inverse-Frequency&lt;br/&gt;Class Weights&lt;/b&gt;&lt;br/&gt;w_c = N / (C · n_c)&lt;br/&gt;Normal: w ≈ 0.06&lt;br/&gt;Shooting: w ≈ 1.83&lt;br/&gt;Counters 10:1 imbalance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#d97706;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1058" width="375" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="43" value="&lt;b&gt;② Confidence Threshold&lt;/b&gt;&lt;br/&gt;τ = 0.30&lt;br/&gt;Pseudo-positive segments&lt;br/&gt;accepted only if s_t ≥ τ&lt;br/&gt;Reduces noisy label training&lt;br/&gt;in early epochs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#d97706;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="505" y="1058" width="375" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="44" value="&lt;b&gt;③ Cosine Annealing LR&lt;/b&gt;&lt;br/&gt;η: 10⁻⁴ → 10⁻⁶&lt;br/&gt;T_max = 40 epochs&lt;br/&gt;No warm restarts&lt;br/&gt;Avoids step-decay oscillations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#d97706;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="910" y="1058" width="375" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="45" value="&lt;b&gt;④ Multi-Seed Training&lt;/b&gt;&lt;br/&gt;Seeds: 42 · 123 · 456&lt;br/&gt;40 epochs each&lt;br/&gt;AdamW · batch 32&lt;br/&gt;Dropout 0.5 · WD 10⁻⁴" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#d97706;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1315" y="1058" width="375" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2.5;strokeColor=#555555;fontSize=11;" edge="1" source="32" target="41" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="47" value="📐  PHASE 6 — Evaluation Metrics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ccfbf1;strokeColor=#0d9488;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#134e4a;" vertex="1" parent="1">
+      <mxGeometry x="80" y="1230" width="1640" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="48" value="&lt;b&gt;Binary Detection&lt;/b&gt;&lt;br/&gt;AUC (ROC) · AP (PR curve)&lt;br/&gt;Video-level anomaly scores" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdfa;strokeColor=#0d9488;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1280" width="505" height="75" as="geometry" />
+    </mxCell>
+    <mxCell id="49" value="&lt;b&gt;Multi-Class Classification&lt;/b&gt;&lt;br/&gt;Macro-F1 (6 classes, balanced)&lt;br/&gt;Weighted-F1 (frequency-weighted)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdfa;strokeColor=#0d9488;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="635" y="1280" width="505" height="75" as="geometry" />
+    </mxCell>
+    <mxCell id="50" value="&lt;b&gt;Temporal Localization&lt;/b&gt;&lt;br/&gt;mAP @ tIoU = 0.3 / 0.5 / 0.7&lt;br/&gt;Segment-level event detection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdfa;strokeColor=#0d9488;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1170" y="1280" width="505" height="75" as="geometry" />
+    </mxCell>
+    <mxCell id="46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2.5;strokeColor=#555555;fontSize=11;" edge="1" source="41" target="47" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="52" value="📊  PHASE 7 — Results  (Mean ± Std, 3 Seeds — VideoMAE-B dominates every metric)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#15803d;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#14532d;" vertex="1" parent="1">
+      <mxGeometry x="80" y="1400" width="1640" height="280" as="geometry" />
+    </mxCell>
+    <mxCell id="53" value="&lt;b&gt;Metric&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#15803d;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1450" width="200" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="54" value="&lt;b&gt;🔴  I3D Baseline&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fee2e2;strokeColor=#b91c1c;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="320" y="1450" width="270" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="55" value="&lt;b&gt;🔵  VideoMAE-B (mean ± std)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#1d4ed8;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="615" y="1450" width="490" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="56" value="&lt;b&gt;🟢  Gain&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#15803d;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="1450" width="490" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="57" value="&lt;b&gt;Binary AUC&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e7f6e7;strokeColor=#15803d;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1500" width="200" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="58" value="&lt;font color='#b91c1c'&gt;87.4%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#fca5a5;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="320" y="1500" width="270" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="59" value="&lt;font color='#1d4ed8'&gt;&lt;b&gt;92.2% ± 1.3%&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#93c5fd;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="615" y="1500" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="60" value="&lt;font color='#15803d'&gt;&lt;b&gt;+4.8 pp  ↑&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#86efac;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="1500" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="61" value="&lt;b&gt;Binary AP&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e7f6e7;strokeColor=#15803d;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1532" width="200" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="62" value="&lt;font color='#b91c1c'&gt;82.1%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#fca5a5;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="320" y="1532" width="270" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="63" value="&lt;font color='#1d4ed8'&gt;&lt;b&gt;88.7% ± 1.8%&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#93c5fd;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="615" y="1532" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="64" value="&lt;font color='#15803d'&gt;&lt;b&gt;+6.6 pp  ↑&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#86efac;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="1532" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="65" value="&lt;b&gt;Macro-F1&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e7f6e7;strokeColor=#15803d;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1564" width="200" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="66" value="&lt;font color='#b91c1c'&gt;19.8%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#fca5a5;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="320" y="1564" width="270" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="67" value="&lt;font color='#1d4ed8'&gt;&lt;b&gt;25.5% ± 2.7%&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#93c5fd;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="615" y="1564" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="68" value="&lt;font color='#15803d'&gt;&lt;b&gt;+28%  ↑&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#86efac;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="1564" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="69" value="&lt;b&gt;Weighted-F1&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e7f6e7;strokeColor=#15803d;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1596" width="200" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="70" value="&lt;font color='#b91c1c'&gt;65.4%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#fca5a5;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="320" y="1596" width="270" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="71" value="&lt;font color='#1d4ed8'&gt;&lt;b&gt;71.9% ± 2.2%&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#93c5fd;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="615" y="1596" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="72" value="&lt;font color='#15803d'&gt;&lt;b&gt;+10%  ↑&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#86efac;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="1596" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="73" value="&lt;b&gt;mAP @ IoU 0.3&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e7f6e7;strokeColor=#15803d;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1628" width="200" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="74" value="&lt;font color='#b91c1c'&gt;0.009&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#fca5a5;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="320" y="1628" width="270" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="75" value="&lt;font color='#1d4ed8'&gt;&lt;b&gt;0.058 ± 0.012&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#93c5fd;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="615" y="1628" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="76" value="&lt;font color='#15803d'&gt;&lt;b&gt;× 6.4  ↑↑&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#86efac;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="1628" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="77" value="&lt;b&gt;mAP @ IoU 0.5&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e7f6e7;strokeColor=#15803d;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1660" width="200" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="78" value="&lt;font color='#b91c1c'&gt;0.004&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#fca5a5;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="320" y="1660" width="270" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="79" value="&lt;font color='#1d4ed8'&gt;&lt;b&gt;0.038 ± 0.008&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#93c5fd;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="615" y="1660" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="80" value="&lt;font color='#15803d'&gt;&lt;b&gt;× 9.4  ↑↑&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#86efac;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="1660" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="81" value="&lt;b&gt;mAP @ IoU 0.7&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e7f6e7;strokeColor=#15803d;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1692" width="200" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="82" value="&lt;font color='#b91c1c'&gt;0.001&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#fca5a5;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="320" y="1692" width="270" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="83" value="&lt;font color='#1d4ed8'&gt;&lt;b&gt;0.022 ± 0.010&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#93c5fd;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="615" y="1692" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="84" value="&lt;font color='#15803d'&gt;&lt;b&gt;× 21.7  ↑↑↑&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#86efac;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="1692" width="490" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2.5;strokeColor=#555555;fontSize=11;" edge="1" source="47" target="52" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="86" value="🎨  PHASE 8 — Publication Figures  (6 matplotlib figures · dpi=200)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#1e3a8a;" vertex="1" parent="1">
+      <mxGeometry x="80" y="1710" width="1640" height="155" as="geometry" />
+    </mxCell>
+    <mxCell id="87" value="&lt;b&gt;Fig 1&lt;/b&gt;&lt;br/&gt;Training Dynamics&lt;br/&gt;(Loss · AUC · F1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1765" width="248" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="88" value="&lt;b&gt;Fig 2&lt;/b&gt;&lt;br/&gt;Dumbbell Chart&lt;br/&gt;(I3D vs VideoMAE-B)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="360" y="1765" width="248" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="89" value="&lt;b&gt;Fig 3&lt;/b&gt;&lt;br/&gt;mAP vs tIoU&lt;br/&gt;Localization Curve" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="620" y="1765" width="248" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="90" value="&lt;b&gt;Fig 4&lt;/b&gt;&lt;br/&gt;Cross-Seed&lt;br/&gt;Reproducibility" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="880" y="1765" width="248" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="91" value="&lt;b&gt;Fig 5&lt;/b&gt;&lt;br/&gt;Per-Class F1&lt;br/&gt;Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1140" y="1765" width="248" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="92" value="&lt;b&gt;Fig 6&lt;/b&gt;&lt;br/&gt;All-Metrics&lt;br/&gt;Radar Chart" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1400" y="1765" width="248" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2.5;strokeColor=#555555;fontSize=11;" edge="1" source="52" target="86" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="94" value="📝  PHASE 9 — Publication Plan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e8ff;strokeColor=#7c3aed;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;align=left;spacingTop=8;spacingLeft=14;fontColor=#4c1d95;" vertex="1" parent="1">
+      <mxGeometry x="80" y="1895" width="1640" height="155" as="geometry" />
+    </mxCell>
+    <mxCell id="95" value="&lt;b&gt;① arXiv Preprint&lt;/b&gt;&lt;br/&gt;Post immediately&lt;br/&gt;Establishes priority&lt;br/&gt;Public timestamp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#faf5ff;strokeColor=#9333ea;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1950" width="380" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="96" value="&lt;b&gt;② ACM MM 2026 Workshop&lt;/b&gt;&lt;br/&gt;Deadline: July 16, 2026&lt;br/&gt;6-page sigconf format&lt;br/&gt;Current results sufficient" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#faf5ff;strokeColor=#9333ea;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="502" y="1950" width="380" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="97" value="&lt;b&gt;③ WACV 2027&lt;/b&gt;&lt;br/&gt;Deadline: ~Aug 2026&lt;br/&gt;Full paper · add ablations&lt;br/&gt;+ cross-dataset eval" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#faf5ff;strokeColor=#9333ea;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="904" y="1950" width="380" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="98" value="&lt;b&gt;④ CVPR 2027&lt;/b&gt;&lt;br/&gt;Deadline: ~Nov 2026&lt;br/&gt;Top-tier · needs XD-Violence&lt;br/&gt;+ VideoMAE-L + ablations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#faf5ff;strokeColor=#9333ea;fontSize=11;verticalAlign=middle;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1306" y="1950" width="380" height="85" as="geometry" />
+    </mxCell>
+    <mxCell id="93" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2.5;strokeColor=#555555;fontSize=11;" edge="1" source="86" target="94" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="99" value="&lt;font color='#1d4ed8'&gt;&lt;b&gt;BU SCC&lt;/b&gt;&lt;br/&gt;NVIDIA A100&lt;br/&gt;40 GB&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#1d4ed8;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="1650" y="540" width="80" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="100" value="&lt;font color='#d97706'&gt;40 epochs × 3 seeds&lt;br/&gt;≈ 15 min/run on A100&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#d97706;whiteSpace=wrap;" vertex="1" parent="1">
+      <mxGeometry x="1580" y="1150" width="140" height="40" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel></diagram>
+</mxfile>

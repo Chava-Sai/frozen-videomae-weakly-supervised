@@ -1,0 +1,97 @@
+{
+  "dataset_summary": {
+    "total_videos_evaluated": 199,
+    "normal_count": 155,
+    "anomaly_count": 44,
+    "split_used": "test",
+    "dataset": "shanghaitech"
+  },
+  "feature_extraction_summary": {
+    "total_extracted": 199,
+    "total_failed": 0,
+    "segment_stats": {
+      "min": 12,
+      "max": 115,
+      "mean": 44.23618090452261
+    },
+    "extractor_match_confirmation": {
+      "frozen_i3d": true,
+      "segment_length": 16,
+      "overlap": 0,
+      "tail_rule": "drop"
+    }
+  },
+  "robustness_metrics": {
+    "auc": 0.37052785923753667,
+    "ap": 0.21651579199163104
+  },
+  "error_profile": {
+    "false_positives": 0,
+    "false_negatives": 43,
+    "confusion_matrix_labels": [
+      "normal",
+      "anomaly"
+    ],
+    "confusion_matrix": [
+      [
+        155,
+        0
+      ],
+      [
+        43,
+        1
+      ]
+    ],
+    "failure_mode_guess": "likely weak anomaly confidence / conservative thresholding (many false negatives)"
+  },
+  "qualitative_examples": {
+    "successes": [
+      {
+        "video_id": "09_003",
+        "gt_label": "normal",
+        "predicted_label": "normal",
+        "anomaly_score": 7.084664799261731e-11,
+        "note": "normal clip correctly rejected."
+      },
+      {
+        "video_id": "11_003",
+        "gt_label": "normal",
+        "predicted_label": "normal",
+        "anomaly_score": 2.1955910700643955e-10,
+        "note": "normal clip correctly rejected."
+      },
+      {
+        "video_id": "03_005",
+        "gt_label": "normal",
+        "predicted_label": "normal",
+        "anomaly_score": 2.1958630747054286e-10,
+        "note": "normal clip correctly rejected."
+      }
+    ],
+    "failures": [
+      {
+        "video_id": "08_0080",
+        "gt_label": "anomaly",
+        "predicted_label": "normal",
+        "anomaly_score": 5.883629000669188e-11,
+        "note": "false negative; anomaly missed."
+      },
+      {
+        "video_id": "04_0011",
+        "gt_label": "anomaly",
+        "predicted_label": "normal",
+        "anomaly_score": 2.2761825757555698e-10,
+        "note": "false negative; anomaly missed."
+      }
+    ]
+  },
+  "decode_settings_used": {
+    "threshold": 0.55,
+    "smooth_window": 1,
+    "min_event_len": 5,
+    "merge_gap": 0,
+    "boundary_radius": 2,
+    "boundary_refine": true,
+    "zero_shot_no_shanghaitech_tuning": true
+  }
+}

@@ -1,0 +1,19 @@
+1) Master ablation table
+Model | TRN | Boundary | k | Training strategy | AUC | AP | Macro-F1 | Weighted-F1 | mAP@0.3 | mAP@0.5 | mAP@0.7 | Pred events
+Step5 RTFM+Cls (no TRN/bnd) | off | off | 4 | joint | 0.918810 | 0.841438 | 0.234393 | 0.714646 | 0.042163 | 0.013085 | 0.001584 | 145
+Step6 +TRN | on | off | 4 | joint | 0.927500 | 0.872399 | 0.301013 | 0.734558 | 0.021967 | 0.004264 | 0.000000 | 149
+Step7 +TRN+bnd (refine on) | on | on | 4 | joint | 0.927976 | 0.870142 | 0.317741 | 0.739557 | 0.024614 | 0.009276 | 0.008000 | 95
+Step7 +TRN+bnd (refine off) | on | off (decode) | 4 | joint | 0.927976 | 0.870142 | 0.336114 | 0.756227 | 0.019760 | 0.006398 | 0.002580 | 140
+Step8 progressive | on | on | 4 | progressive | 0.922321 | 0.858938 | 0.280966 | 0.730641 | 0.014076 | 0.004496 | 0.003409 | 167
+k-sweep full model (k=1) | on | on | 1 | joint | 0.927381 | 0.867482 | 0.302860 | 0.737390 | 0.033624 | 0.012412 | 0.011200 | 93
+k-sweep full model (k=3) | on | on | 3 | joint | 0.927976 | 0.869146 | 0.317741 | 0.739557 | 0.024768 | 0.008793 | 0.007636 | 100
+k-sweep full model (k=5) | on | on | 5 | joint | 0.928452 | 0.870482 | 0.299058 | 0.737838 | 0.025533 | 0.010136 | 0.009000 | 99
+k-sweep full model (k=10) | on | on | 10 | joint | 0.924167 | 0.876345 | 0.320791 | 0.746368 | 0.028829 | 0.004020 | 0.002505 | 133
+
+2) Best model after ablations
+- overall winner: Step5 RTFM+Cls (no TRN/bnd)
+- classification winner (macro-F1): Step7 +TRN+bnd (refine off)
+- localization winner (mAP@0.5): Step5 RTFM+Cls (no TRN/bnd)
+
+3) One-paragraph interpretation
+- TRN effect (Step6-Step5) on macro-F1 is +0.0666; boundary head effect (Step7-Step6) on mAP@0.5 is +0.0050; progressive-vs-joint gap (Step8-Step7) on mAP@0.5 is -0.0048; best pseudo-label budget among tested k is 1 by localization priority.

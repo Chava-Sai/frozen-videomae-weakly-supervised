@@ -1,0 +1,54 @@
+{
+  "video_id": "qaAclucigpY_3_cbd49589b9",
+  "dataset": "rwf_2000",
+  "split": "val",
+  "gt_label": "fighting",
+  "predicted_label": "normal",
+  "case_group": "failure",
+  "binary_status": "FN",
+  "anomaly_score": 1.0878608014408542e-09,
+  "num_segments": 9,
+  "layer_used": 1,
+  "num_heads": 4,
+  "attention_shape": [
+    4,
+    9,
+    9
+  ],
+  "entropy_per_head": [
+    0.9937942181040549,
+    0.9969725247300276,
+    0.987359885408126,
+    0.997280796540162
+  ],
+  "entropy_mean": 0.9938518561955927,
+  "topk_segment_count": 2,
+  "peak_segment_indices": [
+    6,
+    7
+  ],
+  "pred_spans": [],
+  "gt_spans": [],
+  "topk_overlap_with_pred": 0.0,
+  "topk_overlap_with_gt": null,
+  "observation": "Fight miss is consistent with under-attention to fight cues: score=0.0000, predicted-overlap=0.00, entropy=0.994.",
+  "artifacts": {
+    "plot": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/plots/01_rwf_2000_qaAclucigpY_3_cbd49589b9.png",
+    "attention_tensor": "/projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14b/attention_tensors/01_rwf_2000_qaAclucigpY_3_cbd49589b9.npz"
+  },
+  "sequence": {
+    "anomaly_scores": [
+      1.272884991854184e-10,
+      3.584110438992205e-11,
+      2.865953030450896e-10,
+      1.3491842365542794e-10,
+      2.8262427120839817e-11,
+      1.3285078592772948e-10,
+      1.7389358841768399e-09,
+      4.3678563543814164e-10,
+      4.569673459076107e-11
+    ],
+    "predicted_event_segments": [],
+    "gt_event_segments": []
+  }
+}
