@@ -1,7 +1,7 @@
 # Frozen VideoMAE-B Representations for Weakly-Supervised Violence Detection and Temporal Localization
 
 **BU CS585 — Image and Video Computing (Spring 2026)**  
-Srinivasa Sai Chava · Yuxiang Liu · Shristhy Gupta · Vishakha Kumaresan · Anagha P Krishna · Boston University
+Srinivasa Sai Chava · Yuxiang Liu · Shristhy Gupta · Vishakha Kumaresan · Anagha P Krishna
 
 ---
 
