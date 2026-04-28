@@ -54,17 +54,19 @@ Icon?
 presentation/node_modules/
 presentation/~$*
 
-# ── LaTeX build artefacts ─────────────────────────────────────────────────────
+# ── LaTeX build artefacts (NOT actual PDF deliverables) ──────────────────────
 *.aux
-*.log
-*.out
 *.toc
 *.bbl
 *.blg
 *.fls
 *.fdb_latexmk
 *.synctex.gz
-*.pdf
+paper/*.pdf
+milestone2/*.pdf
+
+# ── Log files ────────────────────────────────────────────────────────────────
+*.log
 
 # ── Temp / scratch ────────────────────────────────────────────────────────────
 *.tmp
