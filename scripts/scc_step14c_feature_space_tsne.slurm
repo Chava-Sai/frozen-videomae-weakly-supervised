@@ -4,11 +4,11 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=32G
 #SBATCH -t 10:00:00
-#SBATCH -o /projectnb/cs585/students/saichava/IVC_Project/outputs/step14_interpretability/step14c/slurm-%j.out
+#SBATCH -o outputs/step14_interpretability/step14c/slurm-%j.out
 
 set -euo pipefail
 
-PROJECT_ROOT="/projectnb/cs585/students/saichava/IVC_Project"
+PROJECT_ROOT="${PROJECT_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 cd "$PROJECT_ROOT"
 source .venv/bin/activate
 

@@ -194,7 +194,7 @@ ax.text(6.3, 12.55, "Our Contribution ★", color=BLUE[1],
         fontsize=7.5, fontweight="bold", style="italic", va="center", zorder=5)
 
 rbox(6.5, 11.6, 3.4, 2.0, BLUE, "VideoMAE-B Backbone",
-     ("Frozen ViT-B · Kinetics-400", "MCG-NJU checkpoint", "Masked autoencoder pre-training", "BU SCC · NVIDIA A100"))
+     ("Frozen ViT-B · Kinetics-400", "MCG-NJU checkpoint", "Masked autoencoder pre-training", "Google Colab Pro"))
 
 arrow(6.1, 12.4, 6.5, 12.6, AC1)
 
@@ -410,7 +410,7 @@ for i, (th, ti, su) in enumerate(pub_items):
     rbox(px, pub_y, pw, pub_h, th, ti, su, ft=7.8, fs=6.5)
 
 ax.text(S3X + S3W/2, 0.15,
-        "Embeddings: VideoMAE-B (768-dim) · Kinetics-400 pre-train  ·  Multi-seed: 42 / 123 / 456  ·  40 epochs · AdamW · BU SCC A100",
+        "Embeddings: VideoMAE-B (768-dim) · Kinetics-400 pre-train  ·  Multi-seed: 42 / 123 / 456  ·  40 epochs · AdamW · Google Colab Pro",
         color=DG, fontsize=7, ha="center", va="center", zorder=4)
 
 # ─────────────────────────────────────────────────────────────────────────────

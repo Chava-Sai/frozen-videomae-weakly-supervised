@@ -49,7 +49,7 @@ except ImportError:
     raise SystemExit(
         "transformers not found. Install it with:\n"
         "  pip install transformers>=4.36.0\n"
-        "On BU SCC (inside venv):\n"
+        "In a CUDA-enabled Python environment:\n"
         "  pip install transformers>=4.36.0 accelerate"
     )
 
@@ -138,7 +138,7 @@ def parse_args() -> argparse.Namespace:
         "--hf-cache",
         type=str,
         default=None,
-        help="Optional HuggingFace cache directory (useful on SCC scratch)",
+        help="Optional HuggingFace cache directory (useful for persistent Colab or local storage)",
     )
     return p.parse_args()
 

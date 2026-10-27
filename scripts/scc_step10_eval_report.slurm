@@ -1,5 +1,4 @@
 #!/bin/bash -l
-#$ -P cs585
 #$ -l gpus=1
 #$ -l gpu_c=8.0
 #$ -l h_rt=03:00:00
@@ -8,7 +7,8 @@
 #$ -o outputs/step10_eval.$JOB_ID.log
 
 set -euo pipefail
-cd /projectnb/cs585/students/saichava/IVC_Project
+PROJECT_ROOT="${PROJECT_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
+cd "$PROJECT_ROOT"
 source .venv/bin/activate
 
-bash scripts/run_step10_eval_and_report.sh /projectnb/cs585/students/saichava/IVC_Project cuda 1,3,5,10 0.55 1 5 0 2
+bash scripts/run_step10_eval_and_report.sh ${PROJECT_ROOT} cuda 1,3,5,10 0.55 1 5 0 2

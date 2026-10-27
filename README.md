@@ -1,7 +1,9 @@
 # Frozen VideoMAE-B Representations for Weakly-Supervised Violence Detection and Temporal Localization
 
-**BU CS585 — Image and Video Computing (Spring 2026)**  
-Srinivasa Sai Chava · Yuxiang Liu · Shristhy Gupta · Vishakha Kumaresan · Anagha P Krishna
+**Independent research project (2026)**
+Srinivasa Sai Chava
+
+Designed, implemented, trained, and evaluated by Srinivasa Sai Chava using a personal Google Colab Pro account.
 
 ---
 
@@ -11,7 +13,7 @@ Srinivasa Sai Chava · Yuxiang Liu · Shristhy Gupta · Vishakha Kumaresan · An
 
 ## Overview
 
-This repository contains the full pipeline for weakly-supervised surveillance violence detection using frozen VideoMAE-B features.  
+This repository contains the full pipeline for weakly-supervised surveillance violence detection using frozen VideoMAE-B features.
 We replace the commonly-used I3D backbone with a frozen ViT-B (VideoMAE-B, Kinetics-400) and build an RTFM-style stack with an event classifier head, TRN temporal refinement, and a boundary confidence head — all trained on UCF-Crime with weak (video-level) labels only.
 
 ---
@@ -72,7 +74,7 @@ We replace the commonly-used I3D backbone with a frozen ViT-B (VideoMAE-B, Kinet
 │   ├── plot_videomae_paper.py       # Paper figure generation
 │   └── ...                          # Additional reporting utilities
 │
-├── scripts/                         # Shell scripts (local + SCC/SLURM)
+├── scripts/                         # local runners and optional scheduler templates
 │   ├── scc_train_rtfm.slurm         # SLURM: train RTFM baseline
 │   ├── scc_train_rtfm_trn_boundary.slurm  # SLURM: train full model
 │   ├── scc_step11_xd_zero_shot.slurm      # SLURM: XD-Violence eval
@@ -83,11 +85,11 @@ We replace the commonly-used I3D backbone with a frozen ViT-B (VideoMAE-B, Kinet
 │   ├── run_step11_xd_zero_shot.sh   # Local XD eval runner
 │   └── ...                          # Additional runners
 │
-├── scc_jobs/                        # SCC feature extraction jobs
+├── scc_jobs/                        # optional feature extraction scheduler templates
 │   ├── extract_videomae_full.sh     # Full VideoMAE-B extraction
 │   └── extract_videomae_pilot.sh    # Pilot extraction (sanity check)
 │
-├── outputs_scc/                     # Results from SCC runs (JSONs, figures)
+├── outputs_scc/                     # saved experiment outputs (legacy directory name)
 │   ├── videomae_rtfm/               # Per-seed training results
 │   │   ├── seed_42/                 # results_summary.json, train_curves.png
 │   │   ├── seed_123/
@@ -98,10 +100,8 @@ We replace the commonly-used I3D backbone with a frozen ViT-B (VideoMAE-B, Kinet
 │   ├── rwf_2000_fight_validation/   # RWF-2000 results JSON
 │   └── shanghaitech_robustness/     # ShanghaiTech results JSON
 │
-├── paper/                           # ACL-format paper (LaTeX)
-│   ├── main_acl.tex                 # Final paper source
-│   ├── references.bib               # Bibliography
-│   └── figures/                     # All paper figures
+├── docs/
+│   └── paper_milestone3.pdf          # Unpublished technical report
 │
 ├── requirements.txt
 ├── .gitignore
@@ -129,7 +129,7 @@ source .venv/bin/activate       # Linux/macOS
 pip install -r requirements.txt
 ```
 
-> **GPU required.** All training and feature extraction were run on a single NVIDIA A100 (40 GB) via BU SCC. A GPU with ≥16 GB VRAM is recommended.
+> **GPU required.** Training and feature extraction were run using a personal Google Colab Pro account; available GPU models vary by session. A GPU with ≥16 GB VRAM is recommended.
 
 ---
 
@@ -175,7 +175,7 @@ python src/prepare_shanghaitech_manifest.py \
 
 ## Feature Extraction
 
-We use **frozen VideoMAE-B** (ViT-B, Kinetics-400 pre-trained) from HuggingFace:  
+We use **frozen VideoMAE-B** (ViT-B, Kinetics-400 pre-trained) from HuggingFace:
 [`MCG-NJU/videomae-base-finetuned-kinetics`](https://huggingface.co/MCG-NJU/videomae-base-finetuned-kinetics)
 
 Features are extracted as **16-frame non-overlapping segments**, producing tensors of shape `(T, 768)`.
@@ -191,7 +191,7 @@ python src/extract_videomae_features.py \
     --device cuda
 ```
 
-> On SCC, use `scc_jobs/extract_videomae_full.sh` with the provided SLURM script.
+> For an optional scheduler-based run, adapt `scc_jobs/extract_videomae_full.sh` with the provided SLURM script.
 
 ---
 
@@ -226,7 +226,7 @@ done
 | Loss weights λ₁/λ₂/λ₃ | 0.5 / 0.3 / 0.1 |
 | Seeds | 42, 123, 456 |
 
-> On SCC: `sbatch scripts/scc_train_rtfm_trn_boundary.slurm`
+> Optional scheduler example: `sbatch scripts/scc_train_rtfm_trn_boundary.slurm`
 
 ---
 
@@ -324,7 +324,7 @@ Checkpoints are not stored in this repository due to file size.
 | seed_123_best.pt | 123 | 0.909 | 0.897 |
 | seed_456_best.pt | 456 | 0.931 | 0.896 |
 
-> Contact the author or check the course submission for checkpoint files.
+> Contact the author for checkpoint files.
 
 ---
 
@@ -339,22 +339,14 @@ Checkpoints are not stored in this repository due to file size.
 
 ---
 
-## Paper
+## Technical report
 
-The full ACL-format paper is in `paper/main_acl.tex`.
+The unpublished technical report is available in [`docs/paper_milestone3.pdf`](docs/paper_milestone3.pdf).
 
-**Title:** *Frozen VideoMAE-B Representations for Weakly-Supervised Violence Detection and Temporal Localization*  
-**Author:** Srinivasa Sai Chava, Boston University  
-**Course:** CS585 Image and Video Computing, Spring 2026
+**Author:** Srinivasa Sai Chava
+**Computing:** Google Colab Pro (personal account).
 
-To compile:
-```bash
-cd paper
-pdflatex main_acl.tex
-bibtex main_acl
-pdflatex main_acl.tex
-pdflatex main_acl.tex
-```
+Author and computing metadata were corrected on 27 October 2026 following confirmation by the author. Saved experiment outputs retain their numerical values. Directory names such as `outputs_scc` and `scc_jobs` are retained for compatibility; they do not identify computing resources actually used.
 
 ---
 
@@ -368,7 +360,7 @@ If you use this code, please cite:
              Violence Detection and Temporal Localization},
   author  = {Chava, Srinivasa Sai},
   year    = {2026},
-  note    = {BU CS585 Course Project},
+  note    = {Independent research project; unpublished},
   url     = {https://github.com/Chava-Sai/frozen-videomae-weakly-supervised}
 }
 ```
@@ -380,4 +372,4 @@ If you use this code, please cite:
 - [VideoMAE](https://github.com/MCG-NJU/VideoMAE) — backbone feature extractor
 - [RTFM](https://github.com/tianyu0207/RTFM) — weakly-supervised MIL framework
 - [UCF-Crime](https://www.crcv.ucf.edu/projects/real-world/) — primary training dataset
-- BU Research Computing — SCC cluster (A100 GPUs)
+- Google Colab Pro — author-funded computing

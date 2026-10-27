@@ -3,7 +3,7 @@ set -euo pipefail
 
 if [[ $# -lt 1 ]]; then
   echo "Usage: $0 <project_root>"
-  echo "Example: $0 /projectnb/cs585/students/saichava/IVC_Project"
+  echo "Example: $0 ${PROJECT_ROOT}"
   exit 1
 fi
 
